@@ -1,0 +1,1 @@
+Sie sind nicht eingeloggt oder haben kein SPCast-Produkt. Im Zweifel finden Sie die Webseite hier: <a href="https://www.spcast.eu" target="_blank" rel="noopener">https://www.spcast.eu</a>.

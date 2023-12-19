@@ -1,4 +1,4 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
@@ -232,13 +232,39 @@
 
             <hr style="background-color: red;">
 
+            <h3>Relay Modus</h3>
+
+            <h4>Relay Modus aktivieren</h4>
+
+            <p>Auf Wunsch können Sie Ihre Umgebung im Relay-Modus betreiben. Das heißt einfach gesagt, dass Ihr Programm von einer externen Stelle empfangen wird. Dies kann nützlich sein, wenn ein
+                Wechsel auf der SPCast-Plattform derzeit keine Option ist. Durch den Relay-Modus profitieren Sie dennoch von allen Funktionen innerhalb der Umgebung.</p>
+
+            <div class="controls checkbox">
+                <label>
+                    <input type="checkbox" name="spAudioCCModus" value="1" {if $spAudioCCModus} checked{/if} class="no-icheck toggle-switch-success" data-size="small"
+                        data-on-text="{lang key='sp_yes'}" data-off-text="{lang key='sp_no'}" />
+                    Umgebung im Relay Modus betreiben?
+                </label>
+            </div>
+
+            <h4>Relay-URL</h4>
+
+            <p>Geben Sie hier die URL an, von der die Umgebung Ihr Programm empfangen soll.</p>
+
+            <div class="form-group">
+                <label for="InputAccessID"><strong>Kundennummer</strong></label>
+                <input type="text" class="form-control" id="spSettingsAdditionalAccessID" aria-describedby="InputAccessID" placeholder="Beispiel: https://example.com/stream"
+                    name="spSettingsAdditionalAccessID" value="{$spSettingsAdditionalAccessID}" />
+            </div>
+
             <h3>Sonstige Optionen</h3>
 
             <h4>AudioCC Modus</h4>
 
             <p>Wenn Sie sich bei uns als AudioCC-Kunde registriert haben, müssen Sie spezielle Versionen von Icecast V2 oder Icecast KH Server des Anbieters einsetzen. Wir setzen hierbei auf die
                 Icecast KH Version. SPCast-Streamserver sind jedoch weitaus moderner, latenzfrei und geben uns mehr Spielraum bei der Bereitstellung von Funktionen. Wenn Sie möchten, haben Sie hier
-                die Möglichkeit, das Interface für einen SPCast-Streamserver zu simulieren. Wenn Sie als AudioCC-Kunde Funktionen vermissen, zögern Sie nicht, uns zu schreiben.</p>
+                die Möglichkeit, das Interface für einen SPCast-Streamserver zu simulieren. Als AudioCC Nutzer sollte diese Funktion natürlich dauerhaft aktiviert bleiben! Wenn Sie als AudioCC-Kunde
+                Funktionen vermissen, zögern Sie nicht, uns zu schreiben.</p>
 
             <div class="controls checkbox">
                 <label>

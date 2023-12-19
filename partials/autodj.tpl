@@ -1,14 +1,14 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 {if $smarty.get.success == "password_success"}
     <div id="alert" class="alert alert-success" role="alert">
-        Das Passwort für den zentralen AutoDJ-Account wurde erfolgreich geändert.
+        {lang key='sp_spcast_autodj_note'}
     </div>
 {/if}
 
 {if $smarty.get.success == "password_autodj_success"}
     <div id="alert" class="alert alert-success" role="alert">
-        Ein neues Passwort für den ausgewählten AutoDJ-Unteraccount wurde erfolgreich festgelegt.
+        {lang key='sp_spcast_autodj_note_2'}
     </div>
 {/if}
 
@@ -19,7 +19,7 @@
     {if strstr($autodjPassword, 'File not found') !== false}
         <a href="#" onclick="loadXMLOption0()">
             <div class="alert alert-danger" role="alert">
-                Um sicherzustellen, dass Ihr AutoDJ funktioniert, klicken Sie bitte hier oder weiter unten rechts auf "Neues AutoDJ-Passwort erstellen".
+                {lang key='sp_spcast_autodj_note_3'}
             </div>
         </a>
     {/if}
@@ -31,26 +31,26 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zum AutoDJ"
-                    data-content="Wenn Sie nur über das Kundencenter auf den AutoDJ zugreifen, benötigen Sie die angezeigten Zugangsdaten nicht. Wir empfehlen jedoch, diese zumindest abzuspeichern, falls das Kundencenter aus irgendeinem Grund einmal nicht verfügbar ist.">
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_autodj_datatitle'}"
+                    data-content="{lang key='sp_spcast_autodj_datacontent'}">
                 </i>
-                AutoDJ<br />
-                <small>Der AutoDJ übernimmt Ihr Programm, wenn niemand live sendet.</small>
+                {lang key='sp_spcast_autodj'}<br />
+                <small>{lang key='sp_spcast_autodj_desc'}</small>
             </h3>
         </div>
         <div class="card-toolbar">
             <a class="btn btn-sm btn-white mr-2" href="#" onclick="loadXMLOption0()">
-                Neues AutoDJ-Passwort erstellen
+                {lang key='sp_spcast_autodj_create_password'}
             </a>
         </div>
     </div>
     <div class="card-body">
         {capture assign=autodjPasswordOutput}
             {if strstr($autodjPassword, 'File not found') !== false}
-                <font color='red'>Sie&nbsp;müssen&nbsp;ein&nbsp;eigenes&nbsp;Passwort&nbsp;setzen,&nbsp;um&nbsp;sich&nbsp;im&nbsp;AutoDJ&nbsp;einloggen&nbsp;zu&nbsp;können.</font>
+                <font color='red'>{lang key='sp_spcast_autodj_note_4'}</font>
             {elseif empty($autodjPassword)}
                 <font color='red'>
-                    Es&nbsp;scheint&nbsp;ein&nbsp;Fehler&nbsp;im&nbsp;Datenabruf&nbsp;vorzuliegen.&nbsp;Wenn&nbsp;Ihr&nbsp;Webradio&nbsp;läuft,&nbsp;warten&nbsp;Sie&nbsp;5&nbsp;Minuten&nbsp;und&nbsp;versuchen&nbsp;es&nbsp;erneut.&nbsp;Wenn&nbsp;Sie&nbsp;auch&nbsp;dann&nbsp;keinen&nbsp;Erfolg&nbsp;beim&nbsp;Abruf&nbsp;haben,&nbsp;rebooten&nbsp;Sie&nbsp;das&nbsp;System.
+                    {lang key='sp_spcast_autodj_note_5'}
                 </font>
             {else}
                 {$autodjPassword}
@@ -58,20 +58,18 @@
         {/capture}
         <div class="row">
             <div class="col-sm-12">
-                Bitte verwenden Sie den unteren Button, um sich mit Ihren Hauptdaten im AutoDJ einzuloggen.<br /><br />
-
-                <h5>Hauptdaten</h5>
-                <strong>URL:</strong> <a href="https://{$spHostname}:9030/" target="_blank" rel="noopener">https://{$spHostname}:9030/</a><br>
-                <strong>Username:</strong> autodj@sp.radio.fm<br>
-                <strong>Passwort:</strong> {$autodjPasswordOutput|replace:' ':''|trim}
+                {lang key='sp_spcast_autodj_autologin'}<br /><br />
+                <h5>{lang key='sp_spcast_autodj_main_credentials'}</h5>
+                <strong>{lang key='sp_spcast_url'}:</strong> <a href="https://{$spHostname}:9030/" target="_blank" rel="noopener">https://{$spHostname}:9030/</a><br>
+                <strong>{lang key='sp_spcast_username'}:</strong> autodj@sp.radio.fm<br>
+                <strong>{lang key='sp_spcast_password'}:</strong> {$autodjPasswordOutput|replace:' ':''|trim}
                 <br /><br>
 
                 <form method="post" action="https://{$spHostname}:9030/login" target="_blank" role="form">
                     <input type="hidden" name="username" value="autodj@sp.radio.fm">
                     <input type="hidden" name="password" value="{$autodjPasswordOutput|replace:' ':''|trim}">
-                    <input class="btn btn-primary btn-block" type="submit" name="login" value="Im AutoDJ einloggen">
+                    <input class="btn btn-primary btn-block" type="submit" name="login" value="{lang key='sp_spcast_autodj_login'}">
                 </form>
-
             </div>
         </div>
 
@@ -82,11 +80,11 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zu den AutoDJ Zugangsdaten"
-                    data-content="Zusätzliche Daten können sinnvoll sein, wenn Sie fremden Personen Zugang zum AutoDJ geben möchten. Außerdem behalten Sie die Kontrolle über den Zugang zum AutoDJ und können die von Ihnen verteilten Passwörter jederzeit zurücksetzen.">
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_autodj_sub_credentials_datatitle'}"
+                    data-content="{lang key='sp_spcast_autodj_sub_credentials_datacontent'}">
                 </i>
-                AutoDJ Zugangsdaten<br />
-                <small>Erstellen oder verwalten Sie alle Zugangsdaten für Ihren AutoDJ.</small>
+                {lang key='sp_spcast_autodj_sub_credentials'}<br />
+                <small>{lang key='sp_spcast_autodj_sub_credentials_desc'}</small>
             </h3>
         </div>
         <div class="card-toolbar">
@@ -130,7 +128,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-excel-o"></i>
                                 </span>
-                                <span class="navi-text">Excel</span>
+                                <span class="navi-text">{lang key='sp_excel'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -138,7 +136,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-text-o"></i>
                                 </span>
-                                <span class="navi-text">CSV</span>
+                                <span class="navi-text">{lang key='sp_csv'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -146,7 +144,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-pdf-o"></i>
                                 </span>
-                                <span class="navi-text">PDF</span>
+                                <span class="navi-text">{lang key='sp_pdf'}</span>
                             </a>
                         </li>
                     </ul>
@@ -159,9 +157,9 @@
         <table class="table table-striped table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Username</th>
-                    <th>Passwort</th>
+                    <th>{lang key='sp_spcast_id'}</th>
+                    <th>{lang key='sp_spcast_username'}</th>
+                    <th>{lang key='sp_spcast_password'}</th>
                     <th>{lang key="sp_action"}</th>
                 </tr>
             </thead>
@@ -173,13 +171,13 @@
                     {assign var=autodjSubaccount1 value=file_get_contents($autodjSubaccount1URL)}
 
                     {if strstr($autodjSubaccount1, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount1}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption1()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -191,13 +189,13 @@
                     {assign var=autodjSubaccount2 value=file_get_contents($autodjSubaccount2URL)}
 
                     {if strstr($autodjSubaccount2, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount2}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption2()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -209,13 +207,13 @@
                     {assign var=autodjSubaccount3 value=file_get_contents($autodjSubaccount3URL)}
 
                     {if strstr($autodjSubaccount3, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount3}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption3()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -227,13 +225,13 @@
                     {assign var=autodjSubaccount4 value=file_get_contents($autodjSubaccount4URL)}
 
                     {if strstr($autodjSubaccount4, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount4}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption4()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -245,13 +243,13 @@
                     {assign var=autodjSubaccount5 value=file_get_contents($autodjSubaccount5URL)}
 
                     {if strstr($autodjSubaccount5, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount5}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption5()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -263,13 +261,13 @@
                     {assign var=autodjSubaccount6 value=file_get_contents($autodjSubaccount6URL)}
 
                     {if strstr($autodjSubaccount6, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount6}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption6()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -281,13 +279,13 @@
                     {assign var=autodjSubaccount7 value=file_get_contents($autodjSubaccount7URL)}
 
                     {if strstr($autodjSubaccount7, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount7}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption7()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -299,13 +297,13 @@
                     {assign var=autodjSubaccount8 value=file_get_contents($autodjSubaccount8URL)}
 
                     {if strstr($autodjSubaccount8, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount8}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption8()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -317,13 +315,13 @@
                     {assign var=autodjSubaccount9 value=file_get_contents($autodjSubaccount9URL)}
 
                     {if strstr($autodjSubaccount9, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount9}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption9()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>
@@ -335,13 +333,13 @@
                     {assign var=autodjSubaccount10 value=file_get_contents($autodjSubaccount10URL)}
 
                     {if strstr($autodjSubaccount10, 'File not found') !== false}
-                        <td>Bisher wurde kein Passwort erstellt.</td>
+                        <td>{lang key='sp_spcast_autodj_sub_credentials_nopassword'}</td>
                     {else}
                         <td>{$autodjSubaccount10}</td>
                     {/if}
                     <td>
                         <a class="btn btn-block btn-sm btn-primary" href="#" onclick="loadXMLOption10()">
-                            Neues Passwort erstellen
+                            {lang key='sp_spcast_autodj_sub_credentials_newpassword'}
                         </a>
                     </td>
                 </tr>

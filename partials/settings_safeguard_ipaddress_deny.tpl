@@ -1,4 +1,4 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">

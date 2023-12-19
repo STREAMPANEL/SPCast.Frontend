@@ -1,10 +1,10 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis"
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_note'}"
                     data-content="Der alternative Icecast V2 Server dient lediglich dazu, Ihr Programm innerhalb der verschiedenen Icecast-Plattformen zu bewerben und zu verbreiten. Die Listung auf solchen Plattformen erfordert leider einen originalen Icecast Server, den wir Ihnen unter der SPCast-Plattform zu diesem Zweck zur Verfügung stellen.">
                 </i> Icecast V2 Einstellungen<br />
                 <small>Sie finden hier alle Einstellungen zur SPCast-Umgebung.</small>

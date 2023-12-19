@@ -1,1 +1,1 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>

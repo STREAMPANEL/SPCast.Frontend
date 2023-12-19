@@ -1,4 +1,4 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
@@ -48,7 +48,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-excel-o"></i>
                                 </span>
-                                <span class="navi-text">Excel</span>
+                                <span class="navi-text">{lang key='sp_excel'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -56,7 +56,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-text-o"></i>
                                 </span>
-                                <span class="navi-text">CSV</span>
+                                <span class="navi-text">{lang key='sp_csv'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -64,7 +64,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-pdf-o"></i>
                                 </span>
-                                <span class="navi-text">PDF</span>
+                                <span class="navi-text">{lang key='sp_pdf'}</span>
                             </a>
                         </li>
                     </ul>
@@ -125,7 +125,7 @@
         <div class="card-title">
             <h3 class="card-label text-white">
                 Spezielle Dateien
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis"
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_note'}"
                     data-content="Wenn Sie eine der unteren Dateien ausgetauscht haben, müssen Sie den rechten Button 'Datei/en aktualisieren' einmal betätigen.">
                 </i>
             </h3>

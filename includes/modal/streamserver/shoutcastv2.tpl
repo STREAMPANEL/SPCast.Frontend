@@ -17,16 +17,16 @@
                     <li>Sie sollten die Sendeadressen nur dann verteilen, wenn es unbedingt notwendig ist.</li>
                 </ul>
                 <hr />
-                <h5>Daten für Ihre Webseite & externe Plattformen</h5>
+                <h5>{lang key='sp_spcast_external_links'}</h5>
                 Folgender Verweis ist für die Player Ihrer Webseite und sämtliche externen Plattformen gültig.<br /><br />
                 <strong>HTTP:</strong> <a href="http://{$spHostname}:8130/stream" target="_blank" rel="noopener">http://{$spHostname}:8130/stream</a><br />
                 <strong>HTTPs:</strong> <a href="https://{$spHostname}:8130/stream" target="_blank" rel="noopener">https://{$spHostname}:8130/stream</a><br />
                 <hr />
-                <h5>Sonstige Verweise</h5>
+                <h5>{lang key='sp_spcast_other_links'}</h5>
                 Je nach Einsatzgebiet können die folgenden Verweise unter Umständen nützlich sein.<br /><br />
                 <strong>Winamp / iTunes:</strong> <a href="https://{$spHostname}:8130/listen.pls" target="_blank" rel="noopener">https://{$spHostname}:8130/listen.pls</a><br />
-                <strong>Windows Media Player:</strong> <a href="https://{$spHostname}:8130/listen.asx" target="_blank" rel="noopener">https://{$spHostname}:8130/listen.asx</a><br />
-                <strong>Real Player:</strong> <a href="https://{$spHostname}:8130/listen.ram" target="_blank" rel="noopener">https://{$spHostname}:8130/listen.ram</a><br />
+                <strong>Windows Media {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostname}:8130/listen.asx" target="_blank" rel="noopener">https://{$spHostname}:8130/listen.asx</a><br />
+                <strong>Real {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostname}:8130/listen.ram" target="_blank" rel="noopener">https://{$spHostname}:8130/listen.ram</a><br />
                 <strong>QuickTime:</strong> <a href="https://{$spHostname}:8130/listen.qtl" target="_blank" rel="noopener">https://{$spHostname}:8130/listen.qtl</a><br /><br />
                 <strong>Statusseite:</strong> <a href="https://{$spHostname}:8130/" target="_blank" rel="noopener">https://{$spHostname}:8130/</a><br />
                 <strong>JSON:</strong> <a href="https://{$spHostname}:8130/statistics?json=1" target="_blank" rel="noopener">https://{$spHostname}:8130/statistics?json=1</a><br />

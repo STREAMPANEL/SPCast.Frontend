@@ -1,8 +1,7 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="alert alert-danger" role="alert">
-    Die optionalen Systeme stehen Ihnen nur zur Abwärtskompatibilität zur Verfügung. Bitte verwenden Sie diese Hörverweise nur für eventuell vorhandene Skripte auf Ihrer Webseite oder für die
-    Eintragung in Icecast- oder Shoutcast-Verzeichnisse. Verteilen Sie diese Hörverweise niemals eigenständig an anderen Orten.
+    {lang key='sp_spcast_dashboard_alternate_note'}
 </div>
 
 <!-- Testserver / Based on Icecast KH -->
@@ -14,24 +13,24 @@
                     {assign var="urlToCheck" value="https://{$spHostname}:8100/check_is_online.txt"}
                     {if checkUrl($urlToCheck)}
                         <span class="card-icon">
-                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="Server ist Online" />
+                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="{lang key='sp_spcast_server_is_online'}" />
                         </span>
                     {else}
                         <span class="card-icon blink">
-                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="Server ist Offline" />
+                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="{lang key='sp_spcast_server_is_offline'}" />
                         </span>
                     {/if}
                     <h3 class="card-label text-white">
-                        SPCast (Testserver)<br />
-                        <small>Nutzen Sie diesen Server ausschließlich für interne Tests.</small>
+                        {lang key='sp_spcast_dashboard_alternate_testserver'}<br />
+                        <small>{lang key='sp_spcast_dashboard_alternate_testserver_desc'}</small>
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast2information">
-                        <i class="flaticon2-cube"></i> Informationen
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_dashboard_alternate_toolbar_information'}
                     </a>
                     <a class="btn btn-sm btn-white mr-2" href="#" onclick="loadXMLOption1()">
-                        Server Neustarten
+                        {lang key='sp_spcast_dashboard_alternate_server_restart'}
                     </a>
                 </div>
             </div>
@@ -39,26 +38,24 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <strong>Hostname / IP:</strong> {$spHostname}<br />
-                        <strong>Port:</strong> 8100<br />
-                        <strong>Bitrate:</strong> 320 Kbit/s<br />
-                        <strong>Slots:</strong> 10
+                        <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                        <strong>{lang key='sp_spcast_port'}:</strong> 8100<br />
+                        <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                        <strong>{lang key='sp_spcast_slots'}:</strong> 10
                     </div>
                     <div class="col-sm-6">
-                        <strong>Abspieladresse:</strong> https://{$spHostname}:8100/stream<br />
-                        <strong>HTML 5 Player:</strong> https://{$spHostname}:8100/<br />
+                        <strong>{lang key='sp_spcast_playback_address'}:</strong> https://{$spHostname}:8100/stream<br />
+                        <strong>{lang key='sp_spcast_html5_player'}:</strong> https://{$spHostname}:8100/<br />
                     </div>
                 </div>
             </div>
             <div class="card-footer">
                 <div class="row col-xl-12">
                     <div class="col-xl-6">
-                        <a href="http://{$spHostname}:8100/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTP
-                            aufrufen</a>
+                        <a href="http://{$spHostname}:8100/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_http'}</a>
                     </div>
                     <div class="col-xl-6">
-                        <a href="https://{$spHostname}:8100/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTPs
-                            aufrufen</a>
+                        <a href="https://{$spHostname}:8100/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_https'}</a>
                     </div>
                 </div>
             </div>
@@ -69,27 +66,27 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zu den Zugangsdaten"
-                            data-content="Ihr Testserver verfügt ausschließlich über die angezeigten Zugangsdaten. Es können keine weiteren Daten erstellt werden. Darüber hinaus ist dieser Server nur mit einem Icecast V2-KH-kompatiblen Broadcaster nutzbar.">
+                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_dashboard_alternate_server_credentials_datatitle'}"
+                            data-content="{lang key='sp_spcast_dashboard_alternate_server_credentials_datacontent'}">
                         </i>
-                        Testserver Daten
+                        {lang key='sp_spcast_dashboard_alternate_server_credentials'}
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast2changedata">
-                        <i class="flaticon2-cube"></i> Daten ändern
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_change_credentials'}
                     </a>
                 </div>
             </div>
             <div class="separator separator-solid separator-white opacity-20"></div>
             <div class="card-body">
-                <h4>Icecast V2, KH Broadcaster</h4>
-                <strong>IP / Hostname:</strong> {$spHostname}<br />
-                <strong>Port:</strong> 8100<br />
-                <strong>Bitrate:</strong> 320 Kbit/s<br />
-                <strong>Mountpoint:</strong> /stream<br />
-                <strong>Username:</strong> {$spServerID2Username}<br />
-                <strong>Passwort:</strong> {$spServerID2Password}
+                <h4>{lang key='sp_spcast_icecast_broadcaster'}</h4>
+                <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                <strong>{lang key='sp_spcast_port'}:</strong> 8100<br />
+                <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br />
+                <strong>{lang key='sp_spcast_username'}:</strong> {$spServerID2Username}<br />
+                <strong>{lang key='sp_spcast_password'}:</strong> {$spServerID2Password}
             </div>
         </div>
     </div>
@@ -104,24 +101,24 @@
                     <!--{assign var="urlToCheck" value="https://{$spHostname}:8120/check_is_online.txt"}
                     {if checkUrl($urlToCheck)}
                         <span class="card-icon">
-                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="Server ist Online" />
+                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="{lang key='sp_spcast_server_is_online'}" />
                         </span>
                     {else}
                         <span class="card-icon blink">
-                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="Server ist Offline" />
+                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="{lang key='sp_spcast_server_is_offline'}" />
                         </span>
                     {/if}-->
                     <h3 class="card-label text-white">
-                        Icecast V2<br />
-                        <small>Sie können diesen Server für Ihre Skripte verwenden oder ihn in Icecast V2-kompatiblen Verzeichnissen auflisten lassen.</small>
+                        {lang key='sp_spcast_dashboard_alternate_server_icecastv2'}<br />
+                        <small>{lang key='sp_spcast_dashboard_alternate_server_icecastv2_desc'}</small>
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast4information">
-                        <i class="flaticon2-cube"></i> Informationen
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_dashboard_alternate_toolbar_information'}
                     </a>
                     <a class="btn btn-sm btn-white mr-2" href="#" onclick="loadXMLOption3()">
-                        Server Neustarten
+                        {lang key='sp_spcast_dashboard_alternate_server_restart'}
                     </a>
                 </div>
             </div>
@@ -129,26 +126,24 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <strong>Hostname / IP:</strong> {$spHostname}<br />
-                        <strong>Port:</strong> 8120 HTTPs / 8122 HTTP<br />
-                        <strong>Bitrate:</strong> 320 Kbit/s<br />
-                        <strong>Slots:</strong> 100
+                        <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                        <strong>{lang key='sp_spcast_port'}:</strong> 8120 HTTPs / 8122 HTTP<br />
+                        <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                        <strong>{lang key='sp_spcast_slots'}:</strong> 100
                     </div>
                     <div class="col-sm-6">
-                        <strong>Abspieladresse:</strong> https://{$spHostname}:8120/stream<br />
-                        <strong>HTML 5 Player:</strong> https://{$spHostname}:8120/<br />
+                        <strong>{lang key='sp_spcast_playback_address'}:</strong> https://{$spHostname}:8120/stream<br />
+                        <strong>{lang key='sp_spcast_html5_player'}:</strong> https://{$spHostname}:8120/<br />
                     </div>
                 </div>
             </div>
             <div class="card-footer">
                 <div class="row col-xl-12">
                     <div class="col-xl-6">
-                        <a href="http://{$spHostname}:8122/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTP
-                            aufrufen</a>
+                        <a href="http://{$spHostname}:8122/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_http'}</a>
                     </div>
                     <div class="col-xl-6">
-                        <a href="https://{$spHostname}:8120/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTPs
-                            aufrufen</a>
+                        <a href="https://{$spHostname}:8120/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_https'}</a>
                     </div>
                 </div>
             </div>
@@ -159,26 +154,26 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        Icecast V2 Daten zur Abfrage
-                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zur Datenabfrage"
-                            data-content="Sie können mit diesen Daten sämtliche Inhalte des Streamservers abfragen, wenn Sie ein Icecast V2-kompatibles Skript verwenden. Diese Daten sind ausschließlich für die Datenabfrage gültig und können nicht zum Live-Senden im Broadcaster verwendet werden.">
+                        {lang key='sp_spcast_dashboard_alternate_server_icecastv2_credentials'}
+                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_dashboard_alternate_server_icecastv2_datatitle'}"
+                            data-content="{lang key='sp_spcast_dashboard_alternate_server_icecastv2_datacontent'}">
                         </i>
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast4changedata">
-                        <i class="flaticon2-cube"></i> Daten ändern
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_change_credentials'}
                     </a>
                 </div>
             </div>
             <div class="separator separator-solid separator-white opacity-20"></div>
             <div class="card-body">
-                <strong>IP / Hostname:</strong> {$spHostname}<br />
-                <strong>Port:</strong> 8122 HTTP &amp; 8120 HTTPs<br />
-                <strong>Bitrate:</strong> 320 Kbit/s<br />
-                <strong>Mountpoint:</strong> /stream<br />
-                <strong>Username:</strong> {$spServerID4Username}<br />
-                <strong>Passwort:</strong> {$spServerID4Password}
+                <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                <strong>{lang key='sp_spcast_port'}:</strong> 8122 HTTP &amp; 8120 HTTPs<br />
+                <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br />
+                <strong>{lang key='sp_spcast_username'}:</strong> {$spServerID4Username}<br />
+                <strong>{lang key='sp_spcast_password'}:</strong> {$spServerID4Password}
             </div>
         </div>
     </div>
@@ -193,24 +188,24 @@
                     {assign var="urlToCheck" value="https://{$spHostname}:8130/check_is_online.txt"}
                     {if checkUrl($urlToCheck)}
                         <span class="card-icon">
-                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="Server ist Online" />
+                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="{lang key='sp_spcast_server_is_online'}" />
                         </span>
                     {else}
                         <span class="card-icon blink">
-                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="Server ist Offline" />
+                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="{lang key='sp_spcast_server_is_offline'}" />
                         </span>
                     {/if}
                     <h3 class="card-label text-white">
-                        Shoutcast V2<br />
-                        <small>Sie können diesen Server für Ihre Skripte verwenden oder ihn in Shoutcast-kompatiblen Verzeichnissen auflisten lassen.</small>
+                        {lang key='sp_spcast_dashboard_alternate_server_shoutcastv2'}<br />
+                        <small>{lang key='sp_spcast_dashboard_alternate_server_shoutcastv2_desc'}</small>
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast5information">
-                        <i class="flaticon2-cube"></i> Informationen
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_dashboard_alternate_toolbar_information'}
                     </a>
                     <a class="btn btn-sm btn-white mr-2" href="#" onclick="loadXMLOption4()">
-                        Server Neustarten
+                        {lang key='sp_spcast_dashboard_alternate_server_restart'}
                     </a>
                 </div>
             </div>
@@ -218,26 +213,24 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <strong>Hostname / IP:</strong> {$spHostname}<br />
-                        <strong>Port:</strong> 8130<br />
-                        <strong>Bitrate:</strong> 320 Kbit/s<br />
-                        <strong>Slots:</strong> 100
+                        <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                        <strong>{lang key='sp_spcast_port'}:</strong> 8130<br />
+                        <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                        <strong>{lang key='sp_spcast_slots'}:</strong> 100
                     </div>
                     <div class="col-sm-6">
-                        <strong>Abspieladresse:</strong> https://{$spHostname}:8130/stream<br />
-                        <strong>HTML 5 Player:</strong> https://{$spHostname}:8130/<br />
+                        <strong>{lang key='sp_spcast_playback_address'}:</strong> https://{$spHostname}:8130/stream<br />
+                        <strong>{lang key='sp_spcast_html5_player'}:</strong> https://{$spHostname}:8130/<br />
                     </div>
                 </div>
             </div>
             <div class="card-footer">
                 <div class="row col-xl-12">
                     <div class="col-xl-6">
-                        <a href="http://{$spHostname}:8130/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTP
-                            aufrufen</a>
+                        <a href="http://{$spHostname}:8130/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_http'}</a>
                     </div>
                     <div class="col-xl-6">
-                        <a href="https://{$spHostname}:8130/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTPs
-                            aufrufen</a>
+                        <a href="https://{$spHostname}:8130/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_https'}</a>
                     </div>
                 </div>
             </div>
@@ -248,26 +241,26 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zur Datenabfrage"
-                            data-content="Sie können mit diesen Daten sämtliche Inhalte des Streamservers abfragen, wenn Sie ein Shoutcast V2-kompatibles Skript verwenden. Diese Daten sind nur für die Datenabfrage gültig und können nicht zum Live-Senden im Broadcaster verwendet werden.">
+                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_dashboard_alternate_server_shoutcastv2_datatitle'}"
+                            data-content="{lang key='sp_spcast_dashboard_alternate_server_shoutcastv2_datacontent'}">
                         </i>
-                        Shoutcast V2 Daten zur Abfrage
+                        {lang key='sp_spcast_dashboard_alternate_server_shoutcastv2_credentials'}
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast5changedata">
-                        <i class="flaticon2-cube"></i> Daten ändern
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_change_credentials'}
                     </a>
                 </div>
             </div>
             <div class="separator separator-solid separator-white opacity-20"></div>
             <div class="card-body">
-                <strong>IP / Hostname:</strong> {$spHostname}<br />
-                <strong>Port:</strong> 8130<br />
-                <strong>Bitrate:</strong> 320 Kbit/s<br />
-                <strong>Mountpoint:</strong> /stream<br />
-                <strong>Username:</strong> {$spServerID5Username}<br />
-                <strong>Passwort:</strong> {$spServerID5Password}
+                <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                <strong>{lang key='sp_spcast_port'}:</strong> 8130<br />
+                <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br />
+                <strong>{lang key='sp_spcast_username'}:</strong> {$spServerID5Username}<br />
+                <strong>{lang key='sp_spcast_password'}:</strong> {$spServerID5Password}
             </div>
         </div>
     </div>
@@ -282,24 +275,24 @@
                     {assign var="urlToCheck" value="https://{$spHostname}:8110/check_is_online.txt"}
                     {if checkUrl($urlToCheck)}
                         <span class="card-icon">
-                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="Server ist Online" />
+                            <img src="templates/reborn/assets/flaticon/24px/wifi-signal.svg" alt="{lang key='sp_spcast_server_is_online'}" />
                         </span>
                     {else}
                         <span class="card-icon blink">
-                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="Server ist Offline" />
+                            <img src="templates/reborn/assets/flaticon/24px/no-wifi.svg" alt="{lang key='sp_spcast_server_is_offline'}" />
                         </span>
                     {/if}
                     <h3 class="card-label text-white">
-                        Icecast KH<br />
-                        <small>Nutzen Sie diesen Server nur für eventuell vorhandene Skripte.</small>
+                        {lang key='sp_spcast_dashboard_alternate_server_icecastkh'}<br />
+                        <small>{lang key='sp_spcast_dashboard_alternate_server_icecastkh_desc'}</small>
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast3information">
-                        <i class="flaticon2-cube"></i> Informationen
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_dashboard_alternate_toolbar_information'}
                     </a>
                     <a class="btn btn-sm btn-white mr-2" href="#" onclick="loadXMLOption2()">
-                        Server Neustarten
+                        {lang key='sp_spcast_dashboard_alternate_server_restart'}
                     </a>
                 </div>
             </div>
@@ -307,26 +300,24 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <strong>Hostname / IP:</strong> {$spHostname}<br />
-                        <strong>Port:</strong> 8110<br />
-                        <strong>Bitrate:</strong> 320 Kbit/s<br />
-                        <strong>Slots:</strong> 5
+                        <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                        <strong>{lang key='sp_spcast_port'}:</strong> 8110<br />
+                        <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                        <strong>{lang key='sp_spcast_slots'}:</strong> 5
                     </div>
                     <div class="col-sm-6">
-                        <strong>Abspieladresse:</strong> https://{$spHostname}:8110/stream<br />
-                        <strong>HTML 5 Player:</strong> https://{$spHostname}:8110/<br />
+                        <strong>{lang key='sp_spcast_playback_address'}:</strong> https://{$spHostname}:8110/stream<br />
+                        <strong>{lang key='sp_spcast_html5_player'}:</strong> https://{$spHostname}:8110/<br />
                     </div>
                 </div>
             </div>
             <div class="card-footer">
                 <div class="row col-xl-12">
                     <div class="col-xl-6">
-                        <a href="http://{$spHostname}:8110/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTP
-                            aufrufen</a>
+                        <a href="http://{$spHostname}:8110/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_http'}</a>
                     </div>
                     <div class="col-xl-6">
-                        <a href="https://{$spHostname}:8110/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">HTTPs
-                            aufrufen</a>
+                        <a href="https://{$spHostname}:8110/stream" target="_blank" rel="noopener" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_https'}</a>
                     </div>
                 </div>
             </div>
@@ -337,26 +328,26 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zur Datenabfrage"
-                            data-content="Sie können mit diesen Daten sämtliche Inhalte des Streamservers abfragen, wenn Sie ein Icecast KH-kompatibles Skript verwenden. Diese Daten sind ausschließlich für die Datenabfrage gültig und können nicht zum Live-Senden im Broadcaster verwendet werden.">
+                        <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_dashboard_alternate_server_icecastkh_datatitle'}"
+                            data-content="{lang key='sp_spcast_dashboard_alternate_server_icecastkh_datacontent'}">
                         </i>
-                        Icecast KH Daten zur Abfrage
+                        {lang key='sp_spcast_dashboard_alternate_server_icecastkh_credentials'}
                     </h3>
                 </div>
                 <div class="card-toolbar">
                     <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast3changedata">
-                        <i class="flaticon2-cube"></i> Daten ändern
+                        <i class="flaticon2-cube"></i> {lang key='sp_spcast_change_credentials'}
                     </a>
                 </div>
             </div>
             <div class="separator separator-solid separator-white opacity-20"></div>
             <div class="card-body">
-                <strong>IP / Hostname:</strong> {$spHostname}<br />
-                <strong>Port:</strong> 8110<br />
-                <strong>Bitrate:</strong> 320 Kbit/s<br />
-                <strong>Mountpoint:</strong> /stream<br />
-                <strong>Username:</strong> {$spServerID3Username}<br />
-                <strong>Passwort:</strong> {$spServerID3Password}
+                <strong>{lang key='sp_spcast_hostname_ip'}:</strong> {$spHostname}<br />
+                <strong>{lang key='sp_spcast_port'}:</strong> 8110<br />
+                <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
+                <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br />
+                <strong>{lang key='sp_spcast_username'}:</strong> {$spServerID3Username}<br />
+                <strong>{lang key='sp_spcast_password'}:</strong> {$spServerID3Password}
             </div>
         </div>
     </div>
@@ -368,33 +359,26 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        Weitere Integrationen / Werbevermarkter
+                        {lang key='sp_spcast_dashboard_alternate_server_other_integrations'}
                     </h3>
                 </div>
             </div>
             <div class="separator separator-solid separator-white opacity-20"></div>
             <div class="card-body">
-                <h4>Weitere Integrationen</h4>
-                <p>SPCast wurde von uns modular entwickelt und kann entsprechend erweitert werden. Wenn Sie also eine Integration benötigen, melden Sie sich bei uns!</p>
+                <h4>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_other'}</h4>
+                <p>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_other_desc'}</p>
 
-                <h4>Werbevermarkter</h4>
-                <p>Prinzipiell stehen wir Ihnen nicht im Weg, wenn Sie mit einem Werbenetzwerk in Kontakt sind und Ihren Sender vermarkten möchten. Informieren Sie sich darüber, was Sie benötigen, und
-                    melden Sie sich dann bei uns.</p>
+                <h4>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_adnetwork'}</h4>
+                <p>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_adnetwork_desc'}</p>
 
-                <h5>Audimark / AudioCC</h5>
-                <p>Audimark / AudioCC ist bereits in die Plattform integriert. Der Werbevermarkter verwendet eine eigene Icecast V2 / KH-Version. Sobald Sie mit diesem Werbevermarkter einen Vertrag
-                    abgeschlossen haben, eröffnen Sie ein Supportticket, und wir ändern Ihren Hauptserver auf die Version des Werbevermarkters.<br />
-                    Bitte beachten Sie, dass beim Einsatz von Icecast Server als Hauptsystem einige Funktionen in der SPCast-Umgebung entfallen.</p>
+                <h5>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_audiocc'}</h5>
+                <p>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_audiocc_desc'}<br />{lang key='sp_spcast_dashboard_alternate_server_other_integrations_audiocc_desc_2'}</p>
 
-                <h5>Radio Marketing Service (RMS)</h5>
-                <p>RMS verlangt von Plattformbetreibern wie uns auf unerklärliche Weise eine nicht zu unterschätzende Summe für die einmalige Integration. Wir sind nicht bereit, diese Kosten zu
-                    tragen!
-                    Falls es für Sie keinen anderen Ausweg gibt als das Werbenetzwerk von RMS, müssen Sie uns zum jetzigen Zeitpunkt leider verlassen oder RMS auf die Werbeschnittstelle Ihres
-                    Streamservers hinweisen.</p>
+                <h5>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_rms'}</h5>
+                <p>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_rms_desc'}</p>
 
-                <h5>SPCast Werbeschnittstelle</h5>
-                <p>Generell sollten Sie etwaige Werbevermarkter auf die direkte Schnittstelle Ihres SPCast Streamservers hinweisen. Diese Schnittstelle stellt eine zeitgemäße und moderne Technik auf
-                    dem aktuellen Stand der Technik dar. (<a href="#">Link fehlt</a>)</p>
+                <h5>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_spcast'}</h5>
+                <p>{lang key='sp_spcast_dashboard_alternate_server_other_integrations_spcast_desc'} (<a href="#">{lang key='sp_spcast_comingsoon'}</a>)</p>
             </div>
         </div>
     </div>

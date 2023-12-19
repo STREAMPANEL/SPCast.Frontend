@@ -1,45 +1,39 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 {if $spAudioCCModus == "1"}
     <div class="alert alert-danger" role="alert">
-        <strong>AudioCC wurde erkannt:</strong> Die Funktion der DJ-Accounts wird prinzipiell unterstützt. Bitte beachten Sie jedoch, dass Sie zwingend einen Icecast V2 Broadcaster nutzen
-        müssen. Im Normalfall würden Sie nahezu latenzfrei senden. Da der Einsatz des Icecast Servers wieder Latenzzeiten mit sich bringt, empfehlen wir Ihnen, sich auf die DJ-Accounts
-        direkt in der AutoDJ-Verwaltung zu beschränken.
+        <strong>{lang key="sp_spcast_note_audiocc"}:</strong> {lang key="sp_spcast_note_audiocc_desc"}
     </div>
 {/if}
 
 {if empty($get_access_management_active)}
     <div class="alert alert-danger" role="alert">
-        Bisher wurde kein DJ-Account für Sie angelegt. Um Ihren ersten Account anzulegen, navigieren Sie bitte in der unten stehenden Tabelle zu "Inaktive Accounts" und bearbeiten Sie dort einen Account
-        Ihrer Wahl. Alternativ zu dieser Umgebung stehen Ihnen auch Legacy Accounts im AutoDJ zur Verfügung, die ebenfalls eine Shoutcast V1 Source unterstützen. Beachten Sie jedoch, dass beim Einsatz der
-        Legacy Accounts mit einer erhöhten Latenz beim Senden zu rechnen ist.
+        {lang key="sp_spcast_note_no_dj_account"}
     </div>
 {/if}
 
 <div class="alert alert-danger" role="alert">
-    <strong>Alte Broadcaster:</strong> Wenn Sie eine ältere Version von einen Broadcaster verwenden, die keine Shoutcast V2- oder Icecast V2-Verbindungen unterstützen, müssen diese Moderatoren auf die
-    Moderatorenkonten direkt im AutoDJ zurückgreifen. Alternativ können Sie Ihren Broadcaster auf eine Version aktualisieren, die Shoutcast V2- oder Icecast V2-Verbindungen unterstützt. Der Einsatz
-    dieser Modernen Verbindungen ist immer die empfohlene Variante. Das ältere Protokoll aus dem AutoDJ, bringt unnötige Latenzen und weitere Nachteile mit sich.
+    <strong>{lang key="sp_spcast_note_old_broadcasters"}:</strong> {lang key="sp_spcast_note_old_broadcasters_desc"}
 </div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                Shoutcast V2 / Icecast V2 Broadcaster
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis"
-                    data-content="Die hier erstellten Daten funktionieren ausschließlich mit Icecast V2 / Shoutcast V2 Broadcaster. Wenn Sie Zugangsdaten im alten Shoutcast V1 Format benötigen, loggen Sie sich in Ihren AutoDJ ein und verwenden Sie die dortigen DJ-Accounts.<br/><br/>Denken Sie immer daran, dass die Zugangsdaten auf dieser Seite erst funktionieren wenn Sie die Daten über den Button 'Änderungen in alle Server übernehmen' übernommen haben.">
+                {lang key="sp_spcast_moderator_table"}
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_note'}"
+                    data-content="{lang key='sp_spcast_moderator_table_datacontent'}">
                 </i><br />
-                <small>Erstellen Sie Zugangsdaten, mit denen sich Ihre Moderatoren zum Streamserver verbinden können.</small>
+                <small>{lang key='sp_spcast_moderator_table_desc'}</small>
             </h3>
         </div>
         <div class="card-toolbar">
             <ul class="nav nav-bold nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#sp_pane_1">Aktive Accounts</a>
+                    <a class="nav-link active" data-toggle="tab" href="#sp_pane_1">{lang key='sp_spcast_moderator_active_accounts'}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#sp_pane_2">Inaktive Accounts</a>
+                    <a class="nav-link" data-toggle="tab" href="#sp_pane_2">{lang key='sp_spcast_moderator_inactive_accounts'}</a>
                 </li>
             </ul>
             <div class="dropdown dropdown-inline mr-2">
@@ -82,7 +76,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-excel-o"></i>
                                 </span>
-                                <span class="navi-text">Excel</span>
+                                <span class="navi-text">{lang key='sp_excel'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -90,7 +84,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-text-o"></i>
                                 </span>
-                                <span class="navi-text">CSV</span>
+                                <span class="navi-text">{lang key='sp_csv'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -98,7 +92,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-pdf-o"></i>
                                 </span>
-                                <span class="navi-text">PDF</span>
+                                <span class="navi-text">{lang key='sp_pdf'}</span>
                             </a>
                         </li>
                     </ul>
@@ -112,7 +106,6 @@
                 {include file="modules/addons/SPStreamserverManagement/templates/partials/access_management_active.tpl"}
             </div>
         </div>
-
         <div class="tab-pane fade" id="sp_pane_2" role="tabpanel" aria-labelledby="sp_pane_2">
             <div class="card-body">
                 {include file="modules/addons/SPStreamserverManagement/templates/partials/access_management_inactive.tpl"}
@@ -126,46 +119,42 @@
         <div class="card-header border-0 sp-bg-dark">
             <div class="card-title">
                 <h3 class="card-label text-white">
-                    Tools für Ihre Moderatoren<br />
-                    <small>Die folgenden Hinweise und Skripte können für Sie unter Umständen nützlich sein.</small>
+                    {lang key='sp_spcast_moderator_tools'}<br />
+                    <small>{lang key='sp_spcast_moderator_tools_desc'}</small>
                 </h3>
             </div>
         </div>
         <div class="card-body">
-            <h4>Zuhörer verschieben</h4>
-            <p>Im Normalfall verbindet Ihr Streamserver Ihre aktiven Hörer automatisch mit der nächsten Livesource. Da Übergaben jedoch überall anders gehandhabt werden, steht Ihnen zusätzlich dieses Tool
-                zur Verfügung. Es ermöglicht Ihnen, vorhandene Zuhörer auf einen anderen Mountpoint zu verschieben. Dies kann z. B. bei DJ-Übergaben nötig sein, wenn sich mehrere DJ-Accounts auf einmal
-                verbinden.</p>
-
+            <h4>{lang key='sp_spcast_moderator_tools_movelisteners'}</h4>
+            <p>{lang key='sp_spcast_moderator_tools_movelisteners_desc'}</p>
             <form class="form">
                 <div class="card-body">
                     <div class="form-group row">
                         <div class="col-lg-6">
-                            <label>Von Mountpoint</label>
-                            <input type="text" class="form-control" id="spDJFromMountpoint" name="spDJFromMountpoint" placeholder="Beispiel: dj01" required="required" />
-                            <span class="form-text text-muted">Geben Sie den Ursprung der Zuhörer ein. Ohne /</span>
+                            <label>{lang key='sp_spcast_moderator_tools_movelisteners_source'}</label>
+                            <input type="text" class="form-control" id="spDJFromMountpoint" name="spDJFromMountpoint" placeholder="{lang key='sp_spcast_moderator_tools_movelisteners_source_placeholder'}"
+                                required="required" />
+                            <span class="form-text text-muted">{lang key='sp_spcast_moderator_tools_movelisteners_source_desc'}</span>
                         </div>
                         <div class="col-lg-6">
-                            <label>Nach Mountpoint</label>
-                            <input type="text" class="form-control" id="spDJToMountpoint" name="spDJToMountpoint" placeholder="Beispiel: dj02" required="required" />
-                            <span class="form-text text-muted">Geben Sie das Ziel der Zuhörer ein. Ohne /</span>
+                            <label>{lang key='sp_spcast_moderator_tools_movelisteners_dest'}</label>
+                            <input type="text" class="form-control" id="spDJToMountpoint" name="spDJToMountpoint" placeholder="{lang key='sp_spcast_moderator_tools_movelisteners_dest_placeholder'}"
+                                required="required" />
+                            <span class="form-text text-muted">{lang key='sp_spcast_moderator_tools_movelisteners_dest_desc'}</span>
                         </div>
                     </div>
 
                     <div class="row col-xl-12">
-                        <input type="submit" class="btn btn-success btn-block" name="submit_dj_movelisteners" value="Zuhörer jetzt verschieben" />
+                        <input type="submit" class="btn btn-success btn-block" name="submit_dj_movelisteners" value="{lang key='sp_spcast_moderator_tools_movelisteners_submit'}" />
                     </div>
                 </div>
                 <div class="card-footer">
-                    <h4>API</h4>
-                    <p>Sie können diese URL in Ihre Webseite einbinden oder an Ihre Moderatoren verteilen, ohne Ihren Admin-Benutzernamen und Ihr Passwort bekannt zu geben. Seien Sie jedoch stets
-                        vorsichtig. Jeder, der über die richtigen Token verfügt, kann Ihre Zuhörer nach Belieben verschieben. Wir führen keine Protokolle über die Nutzung. Wenn Sie sich unsicher sind,
-                        ändern Sie daher bitte Ihren Token in den Einstellungen!</p>
-                    <p>https://login.streampanel.net/spapi/spcast/moveListeners.php?url={$spHostname}&token={$spDJMoveListenersToken}&from=<span style="color: red;">URSPRUNG</span>&dest=<span
-                            style="color: red;">ZIEL</span></p>
+                    <h4>{lang key='sp_spcast_api'}</h4>
+                    <p>{lang key='sp_spcast_moderator_tools_api_desc'}</p>
+                    <p>https://login.streampanel.net/spapi/spcast/moveListeners.php?url={$spHostname}&token={$spDJMoveListenersToken}&from=<span
+                            style="color: red;">{lang key='sp_spcast_moderator_tools_api_source'}</span>&dest=<span style="color: red;">{lang key='sp_spcast_moderator_tools_api_dest'}</span></p>
                 </div>
             </form>
-
         </div>
     </div>
 {/if}

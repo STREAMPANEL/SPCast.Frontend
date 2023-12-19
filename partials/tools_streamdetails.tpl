@@ -122,7 +122,7 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                Aktueller Inhalt (AutoDJ)<br />
+                Aktueller Inhalt ({lang key='sp_spcast_autodj'})<br />
                 <small>Den HTML-Code können Sie an einen beliebigen Punkt innerhalb Ihrer Webseite einbinden.</small>
             </h3>
         </div>
@@ -665,7 +665,7 @@
             <h3 class="card-label text-white">
                 <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zu den Moderatordetails"
                     data-content="Diese Abrufmechanik ist bezieht sich auf die Moderatorendaten, die unter den DJ-Accounts im AutoDJ angelegt wurden.">
-                </i> Moderatordetails (AutoDJ)<br />
+                </i> Moderatordetails ({lang key='sp_spcast_autodj'})<br />
                 <small>Den HTML-Code können Sie an einen beliebigen Punkt innerhalb Ihrer Webseite einbinden.</small>
             </h3>
         </div>

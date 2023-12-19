@@ -1,12 +1,12 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                Backupfiles
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis zum AutoDJ"
-                    data-content="Backupfiles sind komplett optional. Wir empfehlen jedoch mindestens 1-2 Stunden Musikmaterial hochzuladen. Sie können einzelne Dateien oder eine von Ihnen vorproduzierte Datei hochladen. Das System wird alle Dateien in nicht festlegbarer Reihenfolge zu einer einzelnen Datei zusammenschneiden und beim Ausfall des Senders als Ersatz für alle aktuellen Zuhörer abspielen. Wurden keine MP3-Dateien für das Backup-Program hochgeladen werden die jeweiligen Dateien aus den unten aufgeführten Bereich 'Spezielle Dateien' abgespielt.">
+                {lang key='sp_spcast_backupfiles'}
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_backupfiles_datatitle'}"
+                    data-content="{lang key='sp_spcast_backupfiles_datacontent'}">
                 </i>
             </h3>
         </div>
@@ -51,7 +51,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-excel-o"></i>
                                 </span>
-                                <span class="navi-text">Excel</span>
+                                <span class="navi-text">{lang key='sp_excel'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -59,7 +59,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-text-o"></i>
                                 </span>
-                                <span class="navi-text">CSV</span>
+                                <span class="navi-text">{lang key='sp_csv'}</span>
                             </a>
                         </li>
                         <li class="navi-item">
@@ -67,7 +67,7 @@
                                 <span class="navi-icon">
                                     <i class="la la-file-pdf-o"></i>
                                 </span>
-                                <span class="navi-text">PDF</span>
+                                <span class="navi-text">{lang key='sp_pdf'}</span>
                             </a>
                         </li>
                     </ul>
@@ -96,30 +96,30 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                Backupfiles hochladen
+                {lang key='sp_spcast_backupfiles_upload'}
             </h3>
         </div>
     </div>
     <form id="SPCastUploadBackupfiles" method="post" action="" role="form" enctype="multipart/form-data">
         <div class="card-body">
             <div class="form-group">
-                <label for="file"><strong>Dateiupload</strong></label>
+                <label for="file"><strong>{lang key='sp_spcast_backupfiles_fileupload'}</strong></label>
                 <div class="custom-file">
                     <input type="file" class="custom-file-input" id="file" name="file[]" accept=".mp3,.MP3" required="required" value="" multiple="multiple" data-fv-not-empty="true"
                         data-fv-file___extension="mp3,MP3" data-fv-file___max-size="1000000000" data-fv-file___max-total-size="1000000000" data-fv-file___type="audio/mpeg,audio/mp3"
-                        data-fv-file___message="Es ist ein Fehler aufgetreten. Bitte stellen Sie sicher, dass es sich ausschließlich um MP3-Dateien handelt und versuchen es erneut." />
+                        data-fv-file___message="{lang key='sp_spcast_backupfiles_datafv_filemessage'}" />
                     <label class="custom-file-label" for="file">{lang key="sp_tac_filetoupload_choosefile"}</label>
                 </div>
                 <small id="fileHelpBlock" class="form-text text-muted" style="margin-top: 10px;">
-                    Laden Sie die gewünschten Dateien hoch. Es sind nur die folgenden Einschränkungen zu beachten:
+                    {lang key='sp_spcast_backupfiles_filehelpblock'}:
                     <ul>
-                        <li>Format: .mp3, .MP3</li>
-                        <li>Die maximale Dateigröße pro Upload beträgt 100 MB.</li>
-                        <li>Wenn Sie Ihre Dateien nummerieren, werden sie in der richtigen Reihenfolge zusammengefügt.</li>
+                        <li>{lang key='sp_spcast_backupfiles_filehelpblock_1'}</li>
+                        <li>{lang key='sp_spcast_backupfiles_filehelpblock_2'}</li>
+                        <li>{lang key='sp_spcast_backupfiles_filehelpblock_3'}</li>
                     </ul>
                 </small>
             </div>
-            <input class="btn btn-success btn-block" type="submit" name="submit_backupfile_upload" value="Datei/en jetzt hochladen" />
+            <input class="btn btn-success btn-block" type="submit" name="submit_backupfile_upload" value="{lang key='sp_spcast_backupfiles_submit'}" />
         </div>
     </form>
 </div>
@@ -128,42 +128,35 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                Spezielle Dateien
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis"
-                    data-content="Wenn Sie eine der unteren Dateien ausgetauscht haben, müssen Sie den rechten Button 'Datei/en aktualisieren' einmal betätigen.">
+                {lang key='sp_spcast_backupfiles_specialfiles'}Spezielle Dateien
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_note'}"
+                    data-content="{lang key='sp_spcast_backupfiles_specialfiles_datacontent'}Wenn Sie eine der unteren Dateien ausgetauscht haben, müssen Sie den rechten Button 'Datei/en aktualisieren' einmal betätigen.">
                 </i>
             </h3>
         </div>
     </div>
     <div class="card-body">
+        <p>{lang key='sp_spcast_backupfiles_specialfiles_1'}</p>
 
-        <p>Es gibt einige spezielle Dateien im System, die Sie bei Bedarf austauschen können. Verwenden Sie beim Upload den exakten Dateinamen, wie unten angegeben. Beachten Sie, dass die Formate den
-            Spezifikationen des AutoDJ entsprechen sollten: 320 Kbit/s, 44.100 kHz.</p>
-
-        <h6>Beim angelegten Backupprogramm</h6>
-        <p>Beim angelegten Backupprogramm wird in jeder Situation Ihr Backupprogramm abgespielt. Wenn hier im Interface kein Backup angelegt wurde, greifen die unteren Dateien. Das Backupprogramm wird
-            automatisch einmal alle 24 Stunden innerhalb der nächtlichen Automatisierung aktualisiert/erstellt.</p>
+        <h6>{lang key='sp_spcast_backupfiles_specialfiles_2'}</h6>
+        <p>{lang key='sp_spcast_backupfiles_specialfiles_3'}</p>
 
         <hr>
 
-        <h6>offline_all.mp3 (Fehlercode 101)</h6>
-        <p>Diese Datei wird vom Hauptserver abgespielt, wenn kein gültiges Signal gefunden werden kann. Dies tritt auf, wenn niemand live sendet und auch der AutoDJ aus irgendeinem Grund nicht läuft.
-            Diese Datei wird nicht abgespielt, wenn Sie ein Backup-Programm oben angelegt haben. <a href="https://assets.streampanel.net/spcast/error/media/offline_all.mp3" target="_blank"
-                rel="noopener">Beispiel anhören</a></p>
+        <h6>{lang key='sp_spcast_backupfiles_specialfiles_4'}</h6>
+        <p>{lang key='sp_spcast_backupfiles_specialfiles_5'} <a href="https://assets.streampanel.net/spcast/error/media/offline_all.mp3" target="_blank"
+                rel="noopener">{lang key='sp_spcast_backupfiles_specialfiles_loadexample'}</a></p>
 
-        <h6>offline_misc.mp3 (Fehlercode 102)</h6>
-        <p>Diese Datei wird von den optionalen Streamservern abgespielt, wenn kein gültiges Signal gefunden werden kann. Ein Neustart der optionalen Streamserver sollte diese Ursache beheben. Diese
-            Datei wird nicht abgespielt, wenn Sie ein Backup-Programm oben angelegt haben. <a href="https://assets.streampanel.net/spcast/error/media/offline_misc.mp3" target="_blank"
-                rel="noopener">Beispiel anhören</a></p>
+        <h6>{lang key='sp_spcast_backupfiles_specialfiles_6'}</h6>
+        <p>{lang key='sp_spcast_backupfiles_specialfiles_7'} <a href="https://assets.streampanel.net/spcast/error/media/offline_misc.mp3" target="_blank"
+                rel="noopener">{lang key='sp_spcast_backupfiles_specialfiles_loadexample'}</a></p>
 
-        <h6>offline_transcoder.mp3 (Fehlercode 103)</h6>
-        <p>Diese Datei wird abgespielt, wenn der Transkoder ausgefallen ist. Dies kann gelegentlich vorkommen. In einem solchen Fall beheben Sie die Ursache, indem Sie den Transkoder neu starten. <a
-                href="https://assets.streampanel.net/spcast/error/media/offline_transcoder.mp3" target="_blank" rel="noopener">Beispiel anhören</a></p>
+        <h6>{lang key='sp_spcast_backupfiles_specialfiles_8'}</h6>
+        <p>{lang key='sp_spcast_backupfiles_specialfiles_9'} <a href="https://assets.streampanel.net/spcast/error/media/offline_transcoder.mp3" target="_blank"
+                rel="noopener">{lang key='sp_spcast_backupfiles_specialfiles_loadexample'}</a></p>
 
-        <h6>error.mp3 (Fehlercode 104)</h6>
-        <p>Diese Datei wird abgespielt, wenn der AutoDJ aktiv ist, aber keine aktive Playlist gefunden werden kann. In einem solchen Fall beheben Sie die Ursache, indem Sie die Planung innerhalb Ihres
-            AutoDJ überprüfen und entsprechend korrigieren. Diese Datei wird nicht abgespielt, wenn Sie ein Backup-Programm oben angelegt haben. <a
-                href="https://assets.streampanel.net/spcast/error/media/error.mp3" target="_blank" rel="noopener">Beispiel anhören</a></p>
-
+        <h6>{lang key='sp_spcast_backupfiles_specialfiles_10'}</h6>
+        <p>{lang key='sp_spcast_backupfiles_specialfiles_11'} <a href="https://assets.streampanel.net/spcast/error/media/error.mp3" target="_blank"
+                rel="noopener">{lang key='sp_spcast_backupfiles_specialfiles_loadexample'}</a></p>
     </div>
 </div>

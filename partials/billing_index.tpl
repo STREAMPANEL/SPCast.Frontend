@@ -2,8 +2,8 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                Kostenübersicht<br />
-                <small>Diese Seite listet Ihnen die voraussichtlichen Kosten Ihrer Umgebung auf.</small>
+                {lang key='sp_spcast_billing'}<br />
+                <small>{lang key='sp_spcast_billing_desc'}</small>
             </h3>
         </div>
         <div class="card-toolbar">
@@ -15,6 +15,6 @@
     </div>
     <div class="card-body">
         <iframe id="spExternalIframeBillingIndex" frameborder="0" src="https://{$spHostname}:9010/d/wIFFe5EVz/spcast-cost-overview?orgId=1&refresh=15s&theme=light&kiosk=tv"
-            title="Kostenübersicht"></iframe>
+            title="{lang key='sp_spcast_billing'}"></iframe>
     </div>
 </div>

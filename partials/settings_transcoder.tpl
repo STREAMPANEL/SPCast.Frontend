@@ -1,10 +1,10 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis"
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_note'}"
                     data-content="Ein Transkoder im Webradio-Bereich wandelt Audioinhalte in verschiedene Formate oder Bitraten um, um sicherzustellen, dass sie von einer breiten Palette von Geräten und Netzwerkverbindungen reibungslos gestreamt werden können. Dies ermöglicht eine optimale Audioqualität und eine nahtlose Wiedergabe für Zuhörer unabhängig von ihren Endgeräten oder Bandbreiten.">
                 </i> Transkoder Einstellungen<br />
                 <small>Sie finden hier alle Einstellungen zum SPCast-Transkoder.</small>

@@ -1,10 +1,10 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="Hinweis"
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_note'}"
                     data-content="Ein LoadBalancer ist ein Netzwerkgerät oder eine Software, die den Datenverkehr auf verschiedene Server oder Ressourcen verteilt, um die Last gleichmäßig zu verteilen und die Ausfallsicherheit zu erhöhen.<br/><br/>In Ihrem Fall geschieht dies bei jedem neuen Zuhörer. Jedes Mal, wenn der Radiosender eingeschaltet wird, wird der neue oder auch bekannte Zuhörer über unseren LoadBalancer verteilt und zu Ihrem Programm geleitet. Ohne den LoadBalancer wären wir auf ein einzelnes System angewiesen, was die Ausfallsicherheit beeinträchtigen würde.">
                 </i> LoadBalancer Einstellungen<br />
                 <small>Sie finden hier alle Einstellungen zum SPCast-LoadBalancer.</small>

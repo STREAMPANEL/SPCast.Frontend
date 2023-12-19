@@ -1,11 +1,11 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                Jingles<br />
-                <small>Sie können diesen Bereich nutzen, um Ihre Jingles oder ähnliche Inhalte automatisch im AutoDJ einspielen zu lassen.</small>
+                {lang key='sp_spcast_jingles'}<br />
+                <small>{lang key='sp_spcast_jingles_desc'}</small>
             </h3>
         </div>
         <div class="card-toolbar">
@@ -129,10 +129,10 @@
 
             <div class="row">
                 <div class="col-sm">
-                    <input class="btn btn-success btn-block" type="submit" name="jingles_update_{$smarty.get.spJinglesNumber}" value="Jingle speichern" />
+                    <input class="btn btn-success btn-block" type="submit" name="jingles_update_{$smarty.get.spJinglesNumber}" value="{lang key='sp_spcast_jingles_save'}" />
                 </div>
                 <div class="col-sm">
-                    <input class="btn btn-danger btn-block" type="submit" name="jingles_delete_{$smarty.get.spJinglesNumber}" value="Jingle löschen" />
+                    <input class="btn btn-danger btn-block" type="submit" name="jingles_delete_{$smarty.get.spJinglesNumber}" value="{lang key='sp_spcast_jingles_delete'}" />
                 </div>
             </div>
 

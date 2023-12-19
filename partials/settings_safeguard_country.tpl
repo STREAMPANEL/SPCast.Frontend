@@ -1,4 +1,4 @@
-<div id="xmlOutput"></div>
+<div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 <div class="alert alert-danger" role="alert">
     Wir empfehlen dringend, nur dann Änderungen vorzunehmen, wenn Sie genau wissen, was Sie tun. Externe Verzeichnisse und andere Dienste können in Ländern lokalisiert sein, die Sie möglicherweise

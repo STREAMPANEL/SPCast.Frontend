@@ -232,30 +232,34 @@
 
             <hr style="background-color: red;">
 
-            <h3>Relay Modus</h3>
+            {if $spAudioCCModus == "0"}
+                <h3>Relay Modus</h3>
 
-            <h4>Relay Modus aktivieren</h4>
+                <h4>Relay Modus aktivieren</h4>
 
-            <p>Auf Wunsch können Sie Ihre Umgebung im Relay-Modus betreiben. Das heißt einfach gesagt, dass Ihr Programm von einer externen Stelle empfangen wird. Dies kann nützlich sein, wenn ein
-                Wechsel auf der SPCast-Plattform derzeit keine Option ist. Durch den Relay-Modus profitieren Sie dennoch von allen Funktionen innerhalb der Umgebung.</p>
+                <p>Auf Wunsch können Sie Ihre Umgebung im Relay-Modus betreiben. Das heißt einfach gesagt, dass Ihr Programm von einer externen Stelle empfangen wird. Dies kann nützlich sein, wenn ein
+                    Wechsel auf der SPCast-Plattform derzeit keine Option ist. Durch den Relay-Modus profitieren Sie dennoch von allen Funktionen innerhalb der Umgebung.</p>
 
-            <div class="controls checkbox">
-                <label>
-                    <input type="checkbox" name="spAudioCCModus" value="1" {if $spAudioCCModus} checked{/if} class="no-icheck toggle-switch-success" data-size="small"
-                        data-on-text="{lang key='sp_yes'}" data-off-text="{lang key='sp_no'}" />
-                    Umgebung im Relay Modus betreiben?
-                </label>
-            </div>
+                <div class="controls checkbox">
+                    <label>
+                        <input type="checkbox" name="spRelayModus" value="1" {if $spRelayModus} checked{/if} class="no-icheck toggle-switch-success" data-size="small" data-on-text="{lang key='sp_yes'}"
+                            data-off-text="{lang key='sp_no'}" />
+                        Umgebung im Relay Modus betreiben?
+                    </label>
+                </div>
 
-            <h4>Relay-URL</h4>
+                <h4>Relay-URL</h4>
 
-            <p>Geben Sie hier die URL an, von der die Umgebung Ihr Programm empfangen soll.</p>
+                <p>Geben Sie hier die externe URL an, von der das Programm in Ihren Streamserver eingespielt werden soll.</p>
 
-            <div class="form-group">
-                <label for="InputAccessID"><strong>Kundennummer</strong></label>
-                <input type="text" class="form-control" id="spSettingsAdditionalAccessID" aria-describedby="InputAccessID" placeholder="Beispiel: https://example.com/stream"
-                    name="spSettingsAdditionalAccessID" value="{$spSettingsAdditionalAccessID}" />
-            </div>
+                <div class="form-group">
+                    <label for="InputRelayURL"><strong>Relay-URL</strong></label>
+                    <input type="url" class="form-control" id="spSettingsRelayURL" aria-describedby="InputRelayURL" placeholder="Beispiel: https://example.com/stream" name="spSettingsRelayURL"
+                        value="{$spSettingsRelayURL}" />
+                </div>
+            {/if}
+
+            <hr style="background-color: red;">
 
             <h3>Sonstige Optionen</h3>
 

@@ -44,8 +44,8 @@
                         <strong>{lang key='sp_spcast_slots'}:</strong> 10
                     </div>
                     <div class="col-sm-6">
-                        <strong>{lang key='sp_spcast_playback_address'}:</strong> https://{$spHostname}:8100/stream<br />
-                        <strong>{lang key='sp_spcast_html5_player'}:</strong> https://{$spHostname}:8100/<br />
+                        <strong>{lang key='sp_spcast_playback_address'} Icecast</strong> https://{$spHostname}:8100/stream<br />
+                        <strong>{lang key='sp_spcast_playback_address'} Shoutcast V2</strong> https://{$spHostname}:8130/stream/2/<br />
                     </div>
                 </div>
             </div>

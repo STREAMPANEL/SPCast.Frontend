@@ -1,6 +1,6 @@
 <div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-info" role="alert">
     {lang key='sp_spcast_dashboard_alternate_note'}
 </div>
 

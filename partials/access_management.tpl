@@ -12,7 +12,7 @@
     </div>
 {/if}
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-info" role="alert">
     <strong>{lang key="sp_spcast_note_old_broadcasters"}:</strong> {lang key="sp_spcast_note_old_broadcasters_desc"}
 </div>
 

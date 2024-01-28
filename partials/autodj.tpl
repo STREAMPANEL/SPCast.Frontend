@@ -369,10 +369,7 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_autodj_datatitle'}"
-                    data-content="{lang key='sp_spcast_autodj_source'}">
-                </i>
-                {lang key='sp_spcast_autodj'}<br />
+                {lang key='sp_spcast_autodj_source'}<br />
                 <small>{lang key='sp_spcast_autodj_source_desc'}</small>
             </h3>
         </div>
@@ -388,6 +385,15 @@
         </div>
     </div>
     <div class="card-body">
+        {capture assign=autodjSourcePasswordOutput}
+            {if strstr($autodjSourcePassword, 'File not found') !== false}
+                <!-- empty -->
+            {elseif empty($autodjSourcePassword)}
+                <!-- empty -->
+            {else}
+                {$autodjSourcePassword}
+            {/if}
+        {/capture}
         <div class="row">
             <div class="col-sm-12">
                 {lang key='sp_spcast_autodj_source_credentials_desc'}<br /><br />
@@ -396,7 +402,7 @@
                 <strong>{lang key='sp_spcast_port'}:</strong> 8160<br>
                 <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br>
                 <strong>{lang key='sp_spcast_username'}:</strong> source<br>
-                <strong>{lang key='sp_spcast_password'}:</strong> {$autodjSourcePassword|replace:' ':''|trim}
+                <strong>{lang key='sp_spcast_password'}:</strong> {$autodjSourcePasswordOutput|replace:' ':''|trim}
             </div>
         </div>
     </div>

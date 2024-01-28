@@ -29,7 +29,7 @@
 {$autodjInitialOutput}
 
 <!-- AutoDJ Source Password -->
-{capture assign=autodjSourcePasswordURL}{$systemsslurl}modules/addons/SPStreamserverManagement/action.php?url=https://{$spHostname}:9000/sp/secure/autodj_source_password.txt&username={$spSecurityUsername}&password={$spSecurityPassword}{/capture}
+{capture assign=autodjSourcePasswordURL}{$systemsslurl}modules/addons/SPStreamserverManagement/action.php?url=https://{$spHostname}:9000/sp/secure/autodj_source_password.txt.php&username={$spSecurityUsername}&password={$spSecurityPassword}{/capture}
 {assign var=autodjSourcePassword value=file_get_contents($autodjSourcePasswordURL)}
 
 {capture assign=autodjInitialSourceOutput}
@@ -386,7 +386,7 @@
     </div>
     <div class="card-body">
         {capture assign=autodjSourcePasswordOutput}
-            {if strstr($autodjSourcePassword, '404NotFound') !== false}
+            {if strstr($autodjSourcePassword, 'File not found') !== false}
                 <font color='red'>error</font>
             {elseif empty($autodjSourcePassword)}
                 <font color='red'>error</font>

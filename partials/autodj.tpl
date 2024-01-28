@@ -387,9 +387,9 @@
     <div class="card-body">
         {capture assign=autodjSourcePasswordOutput}
             {if strstr($autodjSourcePassword, 'File not found') !== false}
-                <!-- empty -->
+                <font color='red'>error</font>
             {elseif empty($autodjSourcePassword)}
-                <!-- empty -->
+                <font color='red'>error</font>
             {else}
                 {$autodjSourcePassword}
             {/if}

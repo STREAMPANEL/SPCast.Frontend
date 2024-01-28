@@ -12,6 +12,7 @@
     </div>
 {/if}
 
+<!-- AutoDJ Login Password -->
 {capture assign=autodjPasswordURL}{$systemsslurl}modules/addons/SPStreamserverManagement/action.php?url=https://{$spHostname}:9000/sp/secure/autodj_reset_password.php.txt.php&username={$spSecurityUsername}&password={$spSecurityPassword}{/capture}
 {assign var=autodjPassword value=file_get_contents($autodjPasswordURL)}
 
@@ -27,6 +28,20 @@
 
 {$autodjInitialOutput}
 
+<!-- AutoDJ Source Password -->
+{capture assign=autodjSourcePasswordURL}{$systemsslurl}modules/addons/SPStreamserverManagement/action.php?url=https://{$spHostname}:9000/sp/secure/autodj_source_password.txt&username={$spSecurityUsername}&password={$spSecurityPassword}{/capture}
+{assign var=autodjSourcePassword value=file_get_contents($autodjSourcePasswordURL)}
+
+{capture assign=autodjInitialSourceOutput}
+    {if strstr($autodjSourcePassword, 'File not found') !== false}
+        <div class="alert alert-danger" role="alert">
+            {lang key='sp_spcast_autodj_note_6'}
+        </div>
+    {/if}
+{/capture}
+
+{$autodjInitialSourceOutput}
+
 <div class="card card-custom sp-margin-bottom">
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
@@ -41,14 +56,6 @@
         <div class="card-toolbar">
             <a class="btn btn-sm btn-white mr-2" href="#" onclick="loadXMLOption0()">
                 {lang key='sp_spcast_autodj_create_password'}
-            </a>
-            <a class="btn btn-sm btn-success mr-2" href="#" onclick="loadXMLOptionStartAutoDJ()" data-container="body" data-offset="-20px -20px" data-toggle="popover" data-placement="top"
-                data-content="{lang key='sp_spcast_autodj_start_desc'}" data-trigger="hover">
-                {lang key='sp_spcast_autodj_start'}
-            </a>
-            <a class="btn btn-sm btn-danger mr-2" href="#" onclick="loadXMLOptionStopAutoDJ()" data-container="body" data-offset="-20px -20px" data-toggle="popover" data-placement="top"
-                data-content="{lang key='sp_spcast_autodj_stop_desc'}" data-trigger="hover">
-                {lang key='sp_spcast_autodj_stop'}
             </a>
         </div>
     </div>
@@ -355,5 +362,42 @@
             </tbody>
         </table>
 
+    </div>
+</div>
+
+<div class="card card-custom sp-margin-bottom">
+    <div class="card-header border-0 sp-bg-dark">
+        <div class="card-title">
+            <h3 class="card-label text-white">
+                <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_autodj_datatitle'}"
+                    data-content="{lang key='sp_spcast_autodj_source'}">
+                </i>
+                {lang key='sp_spcast_autodj'}<br />
+                <small>{lang key='sp_spcast_autodj_source_desc'}</small>
+            </h3>
+        </div>
+        <div class="card-toolbar">
+            <a class="btn btn-sm btn-success mr-2" href="#" onclick="loadXMLOptionStartAutoDJ()" data-container="body" data-offset="-20px -20px" data-toggle="popover" data-placement="top"
+                data-content="{lang key='sp_spcast_autodj_start_desc'}" data-trigger="hover">
+                {lang key='sp_spcast_autodj_start'}
+            </a>
+            <a class="btn btn-sm btn-danger mr-2" href="#" onclick="loadXMLOptionStopAutoDJ()" data-container="body" data-offset="-20px -20px" data-toggle="popover" data-placement="top"
+                data-content="{lang key='sp_spcast_autodj_stop_desc'}" data-trigger="hover">
+                {lang key='sp_spcast_autodj_stop'}
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                {lang key='sp_spcast_autodj_source_credentials_desc'}<br /><br />
+                <h5>{lang key='sp_spcast_autodj_source_credentials'}</h5>
+                <strong>{lang key='sp_spcast_url'}:</strong> {$spHostname}<br>
+                <strong>{lang key='sp_spcast_port'}:</strong> 8160<br>
+                <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br>
+                <strong>{lang key='sp_spcast_username'}:</strong> source<br>
+                <strong>{lang key='sp_spcast_password'}:</strong> {$autodjSourcePassword|replace:' ':''|trim}
+            </div>
+        </div>
     </div>
 </div>

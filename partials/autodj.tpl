@@ -402,7 +402,8 @@
                 <strong>{lang key='sp_spcast_port'}:</strong> 8160<br>
                 <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br>
                 <strong>{lang key='sp_spcast_username'}:</strong> source<br>
-                <strong>{lang key='sp_spcast_password'}:</strong> {$autodjSourcePasswordOutput|replace:' ':''|trim}
+                <strong>{lang key='sp_spcast_password'}:</strong> {$autodjSourcePasswordOutput|replace:' ':''|trim}</br></br>
+                <strong>{lang key='sp_attention'}:</strong> {lang key='sp_spcast_autodj_source_desc2'}
             </div>
         </div>
     </div>

@@ -52,7 +52,7 @@
             xhttp.send(null);
         }
     </script>
-
+    
     <script>
         function loadXMLOptionStopAutoDJ() {
             var xhttp = new XMLHttpRequest();

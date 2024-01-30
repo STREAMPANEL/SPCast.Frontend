@@ -31,6 +31,58 @@
 
 {literal}
     <script>
+        function loadXMLOptionStartAutoDJ() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("xmlOutput").innerHTML = this.responseText;
+                    document.getElementById("xmlOutput").style.display = "block";
+                    setTimeout(function() {
+                        document.getElementById("xmlOutput").style.display = "none";
+                    }, 15000); // 15 seconds
+                    var currentUrl = location.href;
+                    var newUrl = currentUrl.replace(/([\?&])success=[^&]*(&|$)/, '$1') + (currentUrl.indexOf('?') > -1 ? '&' : '?') + 'success=autodj_started';
+                    newUrl = newUrl.replace(/([&])+/g, '&').replace(/#/g, '');
+                    history.replaceState(null, "", newUrl);
+                    location.reload();
+                }
+            };
+            username = "{/literal}{$spSecurityUsername}{literal}";
+            password = "{/literal}{$spSecurityPassword}{literal}";
+            url = "https://{/literal}{$spHostname}{literal}:9000/sp/secure/autodj_start.php";
+            xhttp.open("GET", "{/literal}{$systemsslurl}{literal}modules/addons/SPStreamserverManagement/action.php?url=" + encodeURIComponent(url) + "&username=" + encodeURIComponent(username) + "&password=" + encodeURIComponent(password), true);
+            xhttp.withCredentials = true;
+            xhttp.send(null);
+        }
+    </script>
+
+    <script>
+        function loadXMLOptionStopAutoDJ() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("xmlOutput").innerHTML = this.responseText;
+                    document.getElementById("xmlOutput").style.display = "block";
+                    setTimeout(function() {
+                        document.getElementById("xmlOutput").style.display = "none";
+                    }, 15000); // 15 seconds
+                    var currentUrl = location.href;
+                    var newUrl = currentUrl.replace(/([\?&])success=[^&]*(&|$)/, '$1') + (currentUrl.indexOf('?') > -1 ? '&' : '?') + 'success=autodj_stopped';
+                    newUrl = newUrl.replace(/([&])+/g, '&').replace(/#/g, '');
+                    history.replaceState(null, "", newUrl);
+                    location.reload();
+                }
+            };
+            username = "{/literal}{$spSecurityUsername}{literal}";
+            password = "{/literal}{$spSecurityPassword}{literal}";
+            url = "https://{/literal}{$spHostname}{literal}:9000/sp/secure/autodj_stop.php";
+            xhttp.open("GET", "{/literal}{$systemsslurl}{literal}modules/addons/SPStreamserverManagement/action.php?url=" + encodeURIComponent(url) + "&username=" + encodeURIComponent(username) + "&password=" + encodeURIComponent(password), true);
+            xhttp.withCredentials = true;
+            xhttp.send(null);
+        }
+    </script>
+
+    <script>
         function loadXMLOption1() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {

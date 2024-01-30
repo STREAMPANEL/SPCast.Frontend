@@ -82,6 +82,9 @@
                             <a class="dropdown-item" href="#" onclick="loadXMLOption1()">{lang key='sp_spcast_streamserver_restart'}</a>
                             <a class="dropdown-item" href="#" onclick="loadXMLOption2()">{lang key='sp_spcast_transcoder_restart'}</a>
                             <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" onclick="loadXMLOptionStartAutoDJ()">{lang key='sp_spcast_autodj_start'}</a>
+                            <a class="dropdown-item" href="#" onclick="loadXMLOptionStopAutoDJ()">{lang key='sp_spcast_autodj_stop_desc'}</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#" onclick="loadXMLOption3()">{lang key='sp_spcast_streamserver_all_restart'}</a>
                             <a class="dropdown-item" href="#" onclick="loadXMLOption4()">{lang key='sp_spcast_instance_reboot'}</a>
                             <div class="dropdown-divider"></div>

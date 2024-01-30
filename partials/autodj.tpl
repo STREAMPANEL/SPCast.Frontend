@@ -387,9 +387,9 @@
     <div class="card-body">
         {capture assign=autodjSourcePasswordOutput}
             {if strstr($autodjSourcePassword, 'File not found') !== false}
-                <font color='red'>{lang key='sp_spcast_autodj_source_error_file'}</font>
+                <font color='red'>error</font>
             {elseif empty($autodjSourcePassword)}
-                <font color='red'>{lang key='sp_spcast_autodj_source_error_file'}</font>
+                <font color='red'>error</font>
             {else}
                 {$autodjSourcePassword}
             {/if}

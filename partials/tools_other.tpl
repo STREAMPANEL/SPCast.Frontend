@@ -9,11 +9,13 @@
     </div>
     <div class="card-body">
         <h3>Zuhörerausgabe bei aktiven AutoDJ</h3>
-        <p><strong>Verweis:</strong> <a href="https://{$spHostname}:9000/sp/scripts/cache/dj_mountpoints.html" target="_blank"
-                rel="noopener">https://{$spHostname}:9000/sp/scripts/cache/dj_mountpoints.html</a></p>
-
-        <h3>Zuhörerausgabe bei nicht aktiven AutoDJ</h3>
+        <p>Aktive Ausgabe ist nur vorhanden wenn der AutoDJ läuft.</p>
         <p><strong>Verweis:</strong> <a href="https://{$spHostname}:9000/sp/scripts/cache/autodj_mountpoints.html" target="_blank"
                 rel="noopener">https://{$spHostname}:9000/sp/scripts/cache/autodj_mountpoints.html</a></p>
+
+        <h3>Zuhörerausgabe bei nicht aktiven AutoDJ</h3>
+        <p>Aktive Ausgabe ist nur vorhanden wenn der AutoDJ nicht läuft.</p>
+        <p><strong>Verweis:</strong> <a href="https://{$spHostname}:9000/sp/scripts/cache/dj_mountpoints.html" target="_blank"
+                rel="noopener">https://{$spHostname}:9000/sp/scripts/cache/dj_mountpoints.html</a></p>
     </div>
 </div>

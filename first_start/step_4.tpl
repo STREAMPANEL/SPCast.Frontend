@@ -20,7 +20,7 @@
 
 {if $spHasAccess == "1"}
 
-    {include file="modules/addons/SPStreamserverManagement/templates/first_start/partials/step_1.tpl"}
+    {include file="modules/addons/SPStreamserverManagement/templates/first_start/partials/step_4.tpl"}
 
 {else}
 

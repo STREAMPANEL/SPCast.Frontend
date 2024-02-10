@@ -1,21 +1,9 @@
-{if $spSettingsTranscoder256 == '0' || $spSettingsTranscoder256 == '1'}{else}
-    <div class="row">
-        <div class="col-sm-12 sp-margin-bottom">
-            <div class="alert alert-danger" role="alert">
-                <strong>{lang key='sp_spcast_attention'}:</strong> {lang key='sp_spcast_dashboard_note'}
-            </div>
+{if $spFirstStart == "0"}
+    <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=900">
+        <div class="alert alert-danger" role="alert">
+            {lang key='sp_spcast_dashboard_firststart_setting'}
         </div>
-    </div>
-{/if}
-
-{if $spSettingsLoadBalancerAggregateStatistic == '0' || $spSettingsLoadBalancerAggregateStatistic == '1'}{else}
-    <div class="row">
-        <div class="col-sm-12 sp-margin-bottom">
-            <div class="alert alert-danger" role="alert">
-                <strong>{lang key='sp_spcast_attention'}:</strong> {lang key='sp_spcast_dashboard_note_2'}
-            </div>
-        </div>
-    </div>
+    </a>
 {/if}
 
 {if $spIsAudioCCUser == "1"}
@@ -24,29 +12,19 @@
     </div>
 {/if}
 
-{if $spServerID1Password == "spMustChangeFirst" && !empty($spSettingsRadioName)}
-    <a href="#" class="btn btn-sm btn-white mr-2" data-toggle="modal" data-target="#spcast1changedata">
-        <div class="alert alert-danger" role="alert">
-        {lang key='sp_spcast_dashboard_firststart'}<br /><br />
-        {lang key='sp_spcast_dashboard_firststart_2'}
-        </div>
-    </a>
-{/if}
-
-{if $spSettingsRadioName == ""}
-    <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=6">
-        <div class="alert alert-danger" role="alert">
-        {lang key='sp_spcast_dashboard_firststart_setting'}
-        </div>
-    </a>
+{if $smarty.get.firststart == "finish"}
+    <div class="alert alert-danger" role="alert">
+        <!-- TODO: Translate again -->
+        {lang key='sp_spcast_firststart_finish_desc'}
+    </div>
 {/if}
 
 <div id="xmlOutput" aria-live="assertive" aria-atomic="true"></div>
 
 {if $spUserVersion != $spActualVersion && !empty($spSettingsRadioName)}
     <div class="alert alert-danger" role="alert">
-        <strong>{lang key='sp_spcast_dashboard_newversion'}:</strong> {lang key='sp_spcast_dashboard_newversion_desc'}: <a href="https://www.streampanel.net/changelog/spcast/"
-            target="_blank" rel="noopener">https://www.streampanel.net/changelog/spcast/</a>
+        <strong>{lang key='sp_spcast_dashboard_newversion'}:</strong> {lang key='sp_spcast_dashboard_newversion_desc'}: <a href="https://www.streampanel.net/changelog/spcast/" target="_blank"
+            rel="noopener">https://www.streampanel.net/changelog/spcast/</a>
     </div>
 {/if}
 
@@ -164,7 +142,8 @@
                                 rel="noopener">{lang key='sp_spcast_broadcaster_help_mairlist'}</a>
                             <a class="dropdown-item" href="https://www.spcast.eu/faq/broadcaster/so-richten-sie-einen-encoder-in-radioboss-fuer-ihr-webradio-ein/" target="_blank"
                                 rel="noopener">{lang key='sp_spcast_broadcaster_help_radioboss'}</a>
-                            <a class="dropdown-item" href="https://www.spcast.eu/faq/broadcaster/wie-richte-ich-einen-encoder-in-sam-broadcaster-ein/" target="_blank" rel="noopener">{lang key='sp_spcast_broadcaster_help_sam'}</a>
+                            <a class="dropdown-item" href="https://www.spcast.eu/faq/broadcaster/wie-richte-ich-einen-encoder-in-sam-broadcaster-ein/" target="_blank"
+                                rel="noopener">{lang key='sp_spcast_broadcaster_help_sam'}</a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +157,9 @@
                         <strong>{lang key='sp_spcast_port'}:</strong> 80 {lang key='sp_spcast_or'} {if $spAudioCCModus == "0"}8150{else}8140{/if}<br />
                         <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream_live<br />
                         <strong>{lang key='sp_spcast_username'}:</strong> {$spServerID1Username}<br />
-                        <strong>{lang key='sp_spcast_password'}:</strong> {if $spServerID1Password eq 'spMustChangeFirst'}<font color="red">{lang key='sp_spcast_change_password_first'}</font>{else}{$spServerID1Password}{/if}
+                        <strong>{lang key='sp_spcast_password'}:</strong> {if $spServerID1Password eq 'spMustChangeFirst'}<font color="red">{lang key='sp_spcast_change_password_first'}</font>
+                        {else}{$spServerID1Password}
+                        {/if}
                     </div>
                     <div class="col-sm-6">
                         <h4>{lang key='sp_spcast_alternate_credentials'}</h4>
@@ -189,7 +170,8 @@
                         {/if}<br /><br />
                         <div class="row">
                             <div class="col-sm-6">
-                                <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=3" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_access_management'}</a>
+                                <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=3"
+                                    class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_access_management'}</a>
                             </div>
                             <div class="col-sm-6">
                                 <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=201" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_autodj'}</a>
@@ -230,12 +212,17 @@
                         {/if}
                         {if $spAudioCCModus == "0"}
                             {if $spCNAMELoadBalancer}
-                                <strong>HLS ({lang key='sp_spcast_autodj'}):</strong> <a href="https://{$spCNAMELoadBalancer}/autodj.hls" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/autodj.hls</a><br />
-                                <strong>HLS ({lang key='sp_spcast_livebroadcast'}):</strong> <a href="https://{$spCNAMELoadBalancer}/live.hls" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/live.hls</a><br />
-                                <strong>HLS ({lang key='sp_spcast_automatic_detection'}):</strong> <a href="https://{$spCNAMELoadBalancer}/stream.hls" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/stream.hls</a>
+                                <strong>HLS ({lang key='sp_spcast_autodj'}):</strong> <a href="https://{$spCNAMELoadBalancer}/autodj.hls" target="_blank"
+                                    rel="noopener">https://{$spCNAMELoadBalancer}/autodj.hls</a><br />
+                                <strong>HLS ({lang key='sp_spcast_livebroadcast'}):</strong> <a href="https://{$spCNAMELoadBalancer}/live.hls" target="_blank"
+                                    rel="noopener">https://{$spCNAMELoadBalancer}/live.hls</a><br />
+                                <strong>HLS ({lang key='sp_spcast_automatic_detection'}):</strong> <a href="https://{$spCNAMELoadBalancer}/stream.hls" target="_blank"
+                                    rel="noopener">https://{$spCNAMELoadBalancer}/stream.hls</a>
                             {else}
-                                <strong>HLS ({lang key='sp_spcast_autodj'}):</strong> <a href="https://{$spHostnameLoadbalancer}/autodj.hls" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/autodj.hls</a><br />
-                                <strong>HLS ({lang key='sp_spcast_livebroadcast'}):</strong> <a href="https://{$spHostnameLoadbalancer}/live.hls" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/live.hls</a><br />
+                                <strong>HLS ({lang key='sp_spcast_autodj'}):</strong> <a href="https://{$spHostnameLoadbalancer}/autodj.hls" target="_blank"
+                                    rel="noopener">https://{$spHostnameLoadbalancer}/autodj.hls</a><br />
+                                <strong>HLS ({lang key='sp_spcast_livebroadcast'}):</strong> <a href="https://{$spHostnameLoadbalancer}/live.hls" target="_blank"
+                                    rel="noopener">https://{$spHostnameLoadbalancer}/live.hls</a><br />
                                 <strong>HLS ({lang key='sp_spcast_automatic_detection'}):</strong> <a href="https://{$spHostnameLoadbalancer}/stream.hls" target="_blank"
                                     rel="noopener">https://{$spHostnameLoadbalancer}/stream.hls</a>
                             {/if}
@@ -367,8 +354,10 @@
                 {/if}
                 {if $spCNAMELoadBalancer}
                     <strong>Winamp / iTunes:</strong> <a href="https://{$spCNAMELoadBalancer}/listen.pls" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/listen.pls</a><br />
-                    <strong>Windows Media {lang key='sp_spcast_player'}:</strong> <a href="https://{$spCNAMELoadBalancer}/listen.asx" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/listen.asx</a><br />
-                    <strong>Real {lang key='sp_spcast_player'}:</strong> <a href="https://{$spCNAMELoadBalancer}/listen.ram" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/listen.ram</a><br />
+                    <strong>Windows Media {lang key='sp_spcast_player'}:</strong> <a href="https://{$spCNAMELoadBalancer}/listen.asx" target="_blank"
+                        rel="noopener">https://{$spCNAMELoadBalancer}/listen.asx</a><br />
+                    <strong>Real {lang key='sp_spcast_player'}:</strong> <a href="https://{$spCNAMELoadBalancer}/listen.ram" target="_blank"
+                        rel="noopener">https://{$spCNAMELoadBalancer}/listen.ram</a><br />
                     <strong>QuickTime:</strong> <a href="https://{$spCNAMELoadBalancer}/listen.qtl" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/listen.qtl</a><br />
                     <strong>XSPF:</a></strong> <a href="https://{$spCNAMELoadBalancer}/listen.xspf" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/listen.xspf</a><br /><br />
                     <h6>{lang key='sp_spcast_external_plattforms'}</h6>
@@ -377,14 +366,17 @@
                     <strong>{lang key='sp_spcast_player'}:</strong> <a href="https://{$spCNAMELoadBalancer}/stream" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/stream</a><br /><br />
                 {else}
                     <strong>Winamp / iTunes:</strong> <a href="https://{$spHostnameLoadbalancer}/listen.pls" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/listen.pls</a><br />
-                    <strong>Windows Media {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/listen.asx" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/listen.asx</a><br />
-                    <strong>Real {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/listen.ram" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/listen.ram</a><br />
+                    <strong>Windows Media {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/listen.asx" target="_blank"
+                        rel="noopener">https://{$spHostnameLoadbalancer}/listen.asx</a><br />
+                    <strong>Real {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/listen.ram" target="_blank"
+                        rel="noopener">https://{$spHostnameLoadbalancer}/listen.ram</a><br />
                     <strong>QuickTime:</strong> <a href="https://{$spHostnameLoadbalancer}/listen.qtl" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/listen.qtl</a><br />
                     <strong>XSPF:</a></strong> <a href="https://{$spHostnameLoadbalancer}/listen.xspf" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/listen.xspf</a><br /><br />
                     <h6>{lang key='sp_spcast_external_plattforms'}</h6>
                     {lang key='sp_spcast_external_plattforms_1'}<br />
                     {lang key='sp_spcast_external_plattforms_2'}<br /><br />
-                    <strong>{lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/stream" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/stream</a><br /><br />
+                    <strong>{lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/stream" target="_blank"
+                        rel="noopener">https://{$spHostnameLoadbalancer}/stream</a><br /><br />
                 {/if}
                 {if $spAudioCCModus == "0"}
                     <h6>{lang key='sp_spcast_other_hls'}</h6>
@@ -403,9 +395,11 @@
                 {lang key='sp_spcast_other_links_desc'}<br />
                 {lang key='sp_spcast_other_links_desc_2'}<br /><br />
                 {if $spCNAMELoadBalancer}
-                    <strong>{lang key='sp_spcast_player'}:</strong> <a href="https://{$spCNAMELoadBalancer}/stream.mp3" target="_blank" rel="noopener">https://{$spCNAMELoadBalancer}/stream.mp3</a><br />&nbsp;<br />
+                    <strong>{lang key='sp_spcast_player'}:</strong> <a href="https://{$spCNAMELoadBalancer}/stream.mp3" target="_blank"
+                        rel="noopener">https://{$spCNAMELoadBalancer}/stream.mp3</a><br />&nbsp;<br />
                 {else}
-                    <strong>{lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/stream.mp3" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/stream.mp3</a><br />&nbsp;<br />
+                    <strong>{lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostnameLoadbalancer}/stream.mp3" target="_blank"
+                        rel="noopener">https://{$spHostnameLoadbalancer}/stream.mp3</a><br />&nbsp;<br />
                 {/if}
             </div>
         </div>
@@ -425,7 +419,7 @@
                 </div>
             </div>
             <div class="card-body">
-            <p>{lang key='sp_spcast_shoutcastv12_body'}</p>
+                <p>{lang key='sp_spcast_shoutcastv12_body'}</p>
                 <h6>Shoutcast V2</h6>
                 <p><strong>1</strong> <a href="https://{$spHostnameLoadbalancer}/index.html" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/index.html</a><br />
                     <strong>2:</strong> <a href="https://{$spHostnameLoadbalancer}/played.html" target="_blank" rel="noopener">https://{$spHostnameLoadbalancer}/played.html</a><br />
@@ -469,7 +463,7 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                    {lang key='sp_spcast_error_overview'}<br />
+                        {lang key='sp_spcast_error_overview'}<br />
                         <small>{lang key='sp_spcast_error_overview_desc'}</small>
                     </h3>
                 </div>

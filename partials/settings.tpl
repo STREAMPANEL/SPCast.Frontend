@@ -4,46 +4,49 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                SPCast Einstellungen<br />
-                <small>Sie finden hier alle Einstellungen zur SPCast-Umgebung.</small>
+                {lang key='sp_spcast_settings'}<br />
+                <small>{lang key='sp_spcast_settings_desc'}</small>
             </h3>
         </div>
     </div>
     <form method="post" action="{$smarty.server.PHP_SELF}?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=saved" role="form">
         <div class="card-body">
 
-            <h3>Webradio Detail</h3>
-            <p>Die folgenden 4 Daten repräsentieren Ihr Webradio in verschiedenen Bereichen. Diese Daten werden auch zur Listung im Shoutcast-/Icecast-Verzeichnis verwendet.</p>
+            <h3>{lang key='sp_spcast_settings_webradio'}</h3>
+            <p>{lang key='sp_spcast_settings_webradio_desc'}</p>
 
             {if $spSettingsRadioName == ""}
                 <div class="alert alert-danger" role="alert">
-                    Sie müssen Name, Beschreibung, Genre und URL festlegen, um Ihre Umgebung startbereit zu machen. Wechseln Sie nach Abschluss zurück zum Dashboard, um weitere Hinweise zu erhalten.
+                    {lang key='sp_spcast_settings_webradio_not_functional'}
                 </div>
             {/if}
 
             <div class="form-group">
-                <label for="InputRadioName"><strong>Radio: Name</strong></label>
-                <input type="text" class="form-control" id="spSettingsRadioName" aria-describedby="InputRadioName" placeholder="Geben Sie den Namen Ihres Webradio ein." required="required"
-                    name="spSettingsRadioName" value="{$spSettingsRadioName}" />
+                <label for="InputRadioName"><strong>{lang key='sp_spcast_settings_webradio_name'}</strong></label>
+                <input type="text" class="form-control" id="spSettingsRadioName" aria-describedby="InputRadioName" placeholder="{lang key='sp_spcast_settings_webradio_name_placeholder'}"
+                    required="required" name="spSettingsRadioName" value="{$spSettingsRadioName}" />
+                <small id="InputRadioName" class="form-text text-muted">{lang key='sp_spcast_settings_webradio_name_desc'}</small>
             </div>
 
             <div class="form-group">
-                <label for="InputRadioDescription"><strong>Radio: Beschreibung</strong></label>
-                <input type="text" class="form-control" id="spSettingsRadioDescription" aria-describedby="InputRadioDescription" placeholder="Beschreiben Sie Ihr Webradio." required="required"
-                    name="spSettingsRadioDescription" value="{$spSettingsRadioDescription}" />
+                <label for="InputRadioDescription"><strong>{lang key='sp_spcast_settings_webradio_description'}</strong></label>
+                <input type="text" class="form-control" id="spSettingsRadioDescription" aria-describedby="InputRadioDescription"
+                    placeholder="{lang key='sp_spcast_settings_webradio_description_placeholder'}" required="required" name="spSettingsRadioDescription" value="{$spSettingsRadioDescription}" />
+                <small id="InputRadioDescription" class="form-text text-muted">{lang key='sp_spcast_settings_webradio_description_desc'}</small>
             </div>
 
             <div class="form-group">
-                <label for="InputRadioGenre"><strong>Radio: Genre</strong></label>
-                <input type="text" class="form-control" id="spSettingsRadioGenre" aria-describedby="InputRadioGenre"
-                    placeholder="Tragen Sie die Genre des Webradios ein. Trennen Sie mehrere Genre mit einem Komma. Beispiel: genre1, genre2, genre3" required="required" name="spSettingsRadioGenre"
-                    value="{$spSettingsRadioGenre}" />
+                <label for="InputRadioGenre"><strong>>{lang key='sp_spcast_settings_webradio_genre'}</strong></label>
+                <input type="text" class="form-control" id="spSettingsRadioGenre" aria-describedby="InputRadioGenre" placeholder="{lang key='sp_spcast_settings_webradio_genre_placeholder'}"
+                    required="required" name="spSettingsRadioGenre" value="{$spSettingsRadioGenre}" />
+                <small id="InputRadioGenre" class="form-text text-muted">{lang key='sp_spcast_settings_webradio_genre_desc'}</small>
             </div>
 
             <div class="form-group">
-                <label for="InputRadioURL"><strong>Radio: URL</strong></label>
-                <input type="url" class="form-control" id="spSettingsRadioURL" aria-describedby="InputRadioURL" placeholder="Geben Sie die URL Ihrer Webseite zum Radio an." required="required"
-                    name="spSettingsRadioURL" value="{$spSettingsRadioURL}" />
+                <label for="InputRadioURL"><strong>{lang key='sp_spcast_settings_webradio_url'}</strong></label>
+                <input type="url" class="form-control" id="spSettingsRadioURL" aria-describedby="InputRadioURL" placeholder="{lang key='sp_spcast_settings_webradio_url_placeholder'}"
+                    required="required" name="spSettingsRadioURL" value="{$spSettingsRadioURL}" />
+                <small id="InputRadioURL" class="form-text text-muted">{lang key='sp_spcast_settings_webradio_url_desc'}: https://{$spHostname}</small>
             </div>
 
             {if $spAudioCCModus == "0"}

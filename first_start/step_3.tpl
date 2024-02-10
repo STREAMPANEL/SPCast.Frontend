@@ -1,7 +1,7 @@
 <!--begin::Header-->
 {include file="$template/includes/header/header-part1.tpl"}
 <!--begin::Page CSS / JS by this Template-->
-<style type="text/javascript">
+<style type="text/css">
     div #kt_aside {
         display: none!important;
     }

@@ -128,9 +128,9 @@
     <div class="card-header border-0 sp-bg-dark">
         <div class="card-title">
             <h3 class="card-label text-white">
-                {lang key='sp_spcast_backupfiles_specialfiles'}Spezielle Dateien
+                {lang key='sp_spcast_backupfiles_specialfiles'}
                 <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_note'}"
-                    data-content="{lang key='sp_spcast_backupfiles_specialfiles_datacontent'}Wenn Sie eine der unteren Dateien ausgetauscht haben, müssen Sie den rechten Button 'Datei/en aktualisieren' einmal betätigen.">
+                    data-content="{lang key='sp_spcast_backupfiles_specialfiles_datacontent'}">
                 </i>
             </h3>
         </div>

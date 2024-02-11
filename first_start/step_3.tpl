@@ -3,13 +3,15 @@
 <!--begin::Page CSS / JS by this Template-->
 <style type="text/css">
     div #kt_aside {
-        display: none!important;
+        display: none !important;
     }
+
     .aside {
-        width: 0 px!important;
+        width: 0px !important;
     }
-    .aside - fixed.wrapper {
-        padding - left: 0 px!important;
+
+    .aside-fixed .wrapper {
+        padding-left: 0px !important;
     }
 </style>
 <!--end::Page CSS / JS by this Template-->

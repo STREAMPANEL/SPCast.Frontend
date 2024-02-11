@@ -10,7 +10,7 @@
     <form method="post" action="{$smarty.server.PHP_SELF}?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=903" role="form">
         <div class="card-body">
             <div class="form-group">
-                <label for="InputRadioGenre"><strong>>{lang key='sp_spcast_settings_webradio_genre'}</strong></label>
+                <label for="InputRadioGenre"><strong>{lang key='sp_spcast_settings_webradio_genre'}</strong></label>
                 <input type="text" class="form-control" id="spSettingsRadioGenre" aria-describedby="InputRadioGenre" placeholder="{lang key='sp_spcast_settings_webradio_genre_placeholder'}"
                     required="required" name="spSettingsRadioGenre" value="{$spSettingsRadioGenre}" />
                 <small id="InputRadioGenre" class="form-text text-muted">{lang key='sp_spcast_settings_webradio_genre_desc'}</small>

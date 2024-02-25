@@ -7,6 +7,10 @@
         height: 45px;
     }
 </style>
+
+{if $spFirstStart == "0"}
+    {include file="modules/addons/SPStreamserverManagement/templates/first_start/css/head.tpl"}
+{/if}
 <!--end::Page CSS / JS by this Template-->
 {include file="$template/includes/header/header-part2.tpl"}
 {include file="$template/includes/subheader/partials/spsm/content_overview/index_alternate.tpl"}

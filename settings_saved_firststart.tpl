@@ -4,7 +4,9 @@
 <head>
     <meta charset="{$charset}">
     <meta name="robots" content="noarchive, noindex, follow, nosnippet">
-    <meta http-equiv="refresh" content="2; URL=https://login.streampanel.net/index.php?m=SPStreamserverManagement&amp;spsmpageid=1&amp;firststart=finish">
+    {if isset($smarty.server.HTTP_REFERER) && strpos($smarty.server.HTTP_REFERER, $smarty.server.HTTP_HOST) != false}
+        <meta http-equiv="refresh" content="2; URL={$smarty.server.HTTP_REFERER|replace:'spsmpageid=906':'spsmpageid=1'}">
+    {/if}
     <link href="https://spuassets.streampanel.cloud/global/plugins/bootstrap/4.3.1/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
     <title>{lang key="sp_settings_saved"}</title>
     <style type="text/css">

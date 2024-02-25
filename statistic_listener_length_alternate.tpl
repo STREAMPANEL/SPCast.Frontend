@@ -7,7 +7,11 @@
 {include file="$template/includes/header/header-part3.tpl"}
 <!--end::Header-->
 
-{if $spHasAccess == "1"}
+{if $spFirstStart == "0"}
+
+    {include file="modules/addons/SPStreamserverManagement/templates/first_start/partials/step_1.tpl"}
+
+{elseif $spFirstStart == "1" && $spHasAccess == "1"}
 
     {include file="modules/addons/SPStreamserverManagement/templates/partials/statistic_listener_length_alternate.tpl"}
 

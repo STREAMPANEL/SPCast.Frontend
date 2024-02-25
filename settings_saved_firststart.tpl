@@ -5,7 +5,7 @@
     <meta charset="{$charset}">
     <meta name="robots" content="noarchive, noindex, follow, nosnippet">
     {if isset($smarty.server.HTTP_REFERER) && strpos($smarty.server.HTTP_REFERER, $smarty.server.HTTP_HOST) != false}
-        <meta http-equiv="refresh" content="2; URL={$smarty.server.HTTP_REFERER|replace:'spsmpageid=906':'spsmpageid=1'}">
+        <meta http-equiv="refresh" content="2; URL={$smarty.server.HTTP_REFERER|replace:'spsmpageid=906':'spsmpageid=1'}&firststart=finish">
     {/if}
     <link href="https://spuassets.streampanel.cloud/global/plugins/bootstrap/4.3.1/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
     <title>{lang key="sp_settings_saved"}</title>
@@ -32,7 +32,7 @@
                     <p>{lang key="sp_settings_saved_desc"}</p>
                     <hr>
                     <p class="mb-0">{lang key="sp_settings_saved_manual_redirect"}<br><br>
-                        <a class="btn btn-block btn-primary" href="index.php?m=SPStreamserverManagement&spsmpageid=1&firststart=finish">{lang key="sp_go_back"}</a>
+                        <a class="btn btn-block btn-primary" href="clientarea.php?action=products">{lang key="sp_go_back"}</a>
                     </p>
                 </div>
             </div>

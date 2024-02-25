@@ -1,19 +1,7 @@
 <!--begin::Header-->
 {include file="$template/includes/header/header-part1.tpl"}
 <!--begin::Page CSS / JS by this Template-->
-<style type="text/css">
-    div #kt_aside {
-        display: none !important;
-    }
-
-    .aside {
-        width: 0px !important;
-    }
-
-    .aside-fixed .wrapper {
-        padding-left: 0px !important;
-    }
-</style>
+{include file="modules/addons/SPStreamserverManagement/templates/first_start/css/head.tpl"}
 <!--end::Page CSS / JS by this Template-->
 {include file="$template/includes/header/header-part2.tpl"}
 {include file="$template/includes/subheader/partials/spsm/content_overview/first_start.tpl"}

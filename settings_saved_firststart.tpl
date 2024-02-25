@@ -4,7 +4,7 @@
 <head>
     <meta charset="{$charset}">
     <meta name="robots" content="noarchive, noindex, follow, nosnippet">
-    <meta http-equiv="refresh" content="2; URL=index.php?m=SPStreamserverManagement&amp;spsmpageid=1&amp;firststart=finish">
+    <meta http-equiv="refresh" content="2; URL=https://login.streampanel.net/index.php?m=SPStreamserverManagement&amp;spsmpageid=1&amp;firststart=finish">
     <link href="https://spuassets.streampanel.cloud/global/plugins/bootstrap/4.3.1/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
     <title>{lang key="sp_settings_saved"}</title>
     <style type="text/css">

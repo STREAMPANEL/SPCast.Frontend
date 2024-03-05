@@ -12,7 +12,7 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=1&metro=spcast">
                                 <div class="card-body">
@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=2&metro=spcast">
                                 <div class="card-body">
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=6&metro=spcast">
                                 <div class="card-body">
@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=13&metro=spcast">
                                 <div class="card-body">
@@ -80,7 +80,7 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=201&metro=automation">
                                 <div class="card-body">
@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=3&metro=automation">
                                 <div class="card-body">
@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation">
                                 <div class="card-body">
@@ -116,7 +116,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation">
                                 <div class="card-body">
@@ -148,7 +148,7 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=305&metro=tools">
                                 <div class="card-body">
@@ -160,7 +160,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=5&metro=tools">
                                 <div class="card-body">
@@ -172,7 +172,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=4&metro=tools">
                                 <div class="card-body">
@@ -205,7 +205,7 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=121&metro=statistics">
                                 <div class="card-body">
@@ -217,7 +217,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=112&metro=statistics">
                                 <div class="card-body">
@@ -229,7 +229,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=113&metro=statistics">
                                 <div class="card-body">
@@ -241,7 +241,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=114&metro=statistics">
                                 <div class="card-body">
@@ -255,7 +255,7 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=119&metro=statistics">
                                 <div class="card-body">
@@ -267,7 +267,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=107&metro=statistics">
                                 <div class="card-body">
@@ -279,7 +279,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=108&metro=statistics">
                                 <div class="card-body">
@@ -312,7 +312,7 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=200&metro=plugins">
                                 <div class="card-body">
@@ -324,7 +324,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=12&metro=plugins">
                                 <div class="card-body">
@@ -336,7 +336,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=7&metro=plugins">
                                 <div class="card-body">
@@ -348,7 +348,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="card card-custom card-stretch bgi-no-repeat"
+                        <div class="card card-custom card-stretch bgi-no-repeat sp-margin-bottom"
                             style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
                             <a href="#">
                                 <div class="card-body">

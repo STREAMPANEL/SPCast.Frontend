@@ -1,6 +1,6 @@
 <div class="alert alert-primary" role="alert">
     <ul>
-        <li>Wenn Sie Metadaten extra abrufen möchten schauen Sie im Bereich <a href="index.php?m=SPStreamserverManagement&spserviceid=7984&spsmpageid=305" class="sp-red">Programmdetails</a> um diese
+        <li>Wenn Sie Metadaten extra abrufen möchten schauen Sie im Bereich <a href="index.php?m=SPStreamserverManagement&spserviceid=7984&spsmpageid=305&metro=widgets" class="sp-red">Programmdetails</a> um diese
             auf Ihrer Webseite ausgeben zu können.</li>
     </ul>
 </div>

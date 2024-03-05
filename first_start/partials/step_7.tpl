@@ -7,7 +7,7 @@
             </h3>
         </div>
     </div>
-    <form method="post" action="{$smarty.server.PHP_SELF}?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=firststart_finished" role="form">
+    <form method="post" action="{$smarty.server.PHP_SELF}?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=firststart_finished&metro=spcast" role="form">
         <div class="card-body">
 
             <h3>{lang key='sp_spcast_loadbalancer'}</h3>

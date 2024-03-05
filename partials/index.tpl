@@ -170,11 +170,11 @@
                         {/if}<br /><br />
                         <div class="row">
                             <div class="col-sm-6">
-                                <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=3"
+                                <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=3&metro=automation"
                                     class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_access_management'}</a>
                             </div>
                             <div class="col-sm-6">
-                                <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=201" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_autodj'}</a>
+                                <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=201&metro=automation" class="btn btn-light-primary btn-block">{lang key='sp_spcast_open_autodj'}</a>
                             </div>
                         </div>
                     </div>

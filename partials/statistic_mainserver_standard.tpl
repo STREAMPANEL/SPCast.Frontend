@@ -7,19 +7,19 @@
             </h3>
         </div>
         <div class="card-toolbar">
-            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=121"
+            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=121&metro=statistics"
                 class="btn btn-sm mr-2{if $filename eq "index" and $smarty.get.m eq "SPStreamserverManagement" and $smarty.get.spsmpageid eq "121"} btn-danger{else} btn-white{/if}">
                 Live
             </a>
-            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=101"
+            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=101&metro=statistics"
                 class="btn btn-sm mr-2{if $filename eq "index" and $smarty.get.m eq "SPStreamserverManagement" and $smarty.get.spsmpageid eq "101"} btn-danger{else} btn-white{/if}">
                 Standard
             </a>
-            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=116"
+            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=116&metro=statistics"
                 class="btn btn-sm mr-2{if $filename eq "index" and $smarty.get.m eq "SPStreamserverManagement" and $smarty.get.spsmpageid eq "116"} btn-danger{else} btn-white{/if}">
                 Erweitert
             </a>
-            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=109"
+            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=109&metro=statistics"
                 class="btn btn-sm mr-2{if $filename eq "index" and $smarty.get.m eq "SPStreamserverManagement" and $smarty.get.spsmpageid eq "109"} btn-danger{else} btn-white{/if}">
                 Detailiert
             </a>

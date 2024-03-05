@@ -6,11 +6,11 @@
             </h3>
         </div>
         <div class="card-toolbar">
-            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=303"
+            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=303&metro=widgets"
                 class="btn btn-sm mr-2{if $filename eq "index" and $smarty.get.m eq "SPStreamserverManagement" and $smarty.get.spsmpageid eq "303"} btn-danger{else} btn-white{/if}">
                 Programmhistorie
             </a>
-            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=308"
+            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=308&metro=widgets"
                 class="btn btn-sm mr-2{if $filename eq "index" and $smarty.get.m eq "SPStreamserverManagement" and $smarty.get.spsmpageid eq "308"} btn-danger{else} btn-white{/if}">
                 Einstellungen
             </a>

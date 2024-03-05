@@ -97,9 +97,9 @@
                         </td>
                         <td>{$spNewsStartHour}:{$spNewsStartMinute} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=1" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=1&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_1" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -119,9 +119,9 @@
                         </td>
                         <td>{$spNewsStartHour2}:{$spNewsStartMinute2} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=2" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=2&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_2" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -141,9 +141,9 @@
                         </td>
                         <td>{$spNewsStartHour3}:{$spNewsStartMinute3} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=3" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=3&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="deletetac01" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -163,9 +163,9 @@
                         </td>
                         <td>{$spNewsStartHour4}:{$spNewsStartMinute4} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=4" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=4&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_4" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -185,9 +185,9 @@
                         </td>
                         <td>{$spNewsStartHour5}:{$spNewsStartMinute5} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=5" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=5&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_5" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -207,9 +207,9 @@
                         </td>
                         <td>{$spNewsStartHour6}:{$spNewsStartMinute6} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=6" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=6&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_6" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -229,9 +229,9 @@
                         </td>
                         <td>{$spNewsStartHour7}:{$spNewsStartMinute7} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=7" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=7&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_7" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -251,9 +251,9 @@
                         </td>
                         <td>{$spNewsStartHour8}:{$spNewsStartMinute8} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=8" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=8&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_8" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -273,9 +273,9 @@
                         </td>
                         <td>{$spNewsStartHour9}:{$spNewsStartMinute9} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=9" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=9&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_9" value="{lang key='sp_spcast_news_delete'}" />
                             </form>
@@ -295,9 +295,9 @@
                         </td>
                         <td>{$spNewsStartHour10}:{$spNewsStartMinute10} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=10" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=202&spNewsNumber=10&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_news_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="news_delete_10" value="{lang key='sp_spcast_news_delete'}" />
                             </form>

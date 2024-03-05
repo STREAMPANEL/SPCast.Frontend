@@ -97,9 +97,9 @@
                         </td>
                         <td>{$spJinglesStartHour}:{$spJinglesStartMinute} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=1" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=1&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_1" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -119,9 +119,9 @@
                         </td>
                         <td>{$spJinglesStartHour2}:{$spJinglesStartMinute2} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=2" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=2&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_2" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -141,9 +141,9 @@
                         </td>
                         <td>{$spJinglesStartHour3}:{$spJinglesStartMinute3} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=3" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=3&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="deletetac01" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -163,9 +163,9 @@
                         </td>
                         <td>{$spJinglesStartHour4}:{$spJinglesStartMinute4} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=4" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=4&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_4" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -185,9 +185,9 @@
                         </td>
                         <td>{$spJinglesStartHour5}:{$spJinglesStartMinute5} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=5" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=5&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_5" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -207,9 +207,9 @@
                         </td>
                         <td>{$spJinglesStartHour6}:{$spJinglesStartMinute6} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=6" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=6&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_6" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -229,9 +229,9 @@
                         </td>
                         <td>{$spJinglesStartHour7}:{$spJinglesStartMinute7} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=7" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=7&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_7" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -251,9 +251,9 @@
                         </td>
                         <td>{$spJinglesStartHour8}:{$spJinglesStartMinute8} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=8" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=8&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_8" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -275,7 +275,7 @@
                         <td>
                             <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=9" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_9" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>
@@ -295,9 +295,9 @@
                         </td>
                         <td>{$spJinglesStartHour10}:{$spJinglesStartMinute10} Uhr</td>
                         <td>
-                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=10" class="btn btn-primary btn-sm btn-block"
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=205&spJinglesNumber=10&metro=automation" class="btn btn-primary btn-sm btn-block"
                                 role="button">{lang key='sp_spcast_jingles_edit'}</a>
-                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207"
+                            <form onsubmit="setTimeout('parent.location.reload()',100); return true;" method="post" action="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation"
                                 role="form">
                                 <input class="btn btn-danger btn-sm btn-block" type="submit" name="jingles_delete_10" value="{lang key='sp_spcast_jingles_delete'}" />
                             </form>

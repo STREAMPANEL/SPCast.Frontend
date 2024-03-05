@@ -32,7 +32,7 @@
                     <p>{lang key="sp_settings_saved_desc"}</p>
                     <hr>
                     <p class="mb-0">{lang key="sp_settings_saved_manual_redirect"}<br><br>
-                        <a class="btn btn-block btn-primary" href="index.php?m=SPStreamserverManagement&spsmpageid=1">{lang key="sp_go_back"}</a>
+                        <a class="btn btn-block btn-primary" href="index.php?m=SPStreamserverManagement&spsmpageid=1&metro=spcast">{lang key="sp_go_back"}</a>
                     </p>
                 </div>
             </div>

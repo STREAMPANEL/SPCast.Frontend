@@ -12,39 +12,51 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=1&metro=spcast" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Dashboard</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=1&metro=spcast">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Dashboard</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=2&metro=spcast" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Dashboard (Alternativ)</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_alternate_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=2&metro=spcast">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Dashboard (Alternativ)</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_alternate_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=6&metro=spcast" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Einstellungen</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_settings_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=6&metro=spcast">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Einstellungen</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_settings_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=13&metro=spcast" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">LoadBalancer</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_loadbalancer_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=13&metro=spcast">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">LoadBalancer</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_loadbalancer_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -68,39 +80,51 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=201&metro=automation" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">AutoDJ</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_autodj_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=201&metro=automation">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">AutoDJ</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_autodj_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=3&metro=automation" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Moderator Zugangsdaten</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_djaccess_modern_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=3&metro=automation">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Moderator Zugangsdaten</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_djaccess_modern_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Nachrichten Management</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_news_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=204&metro=automation">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Nachrichten Management</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_news_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Jingle Management</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_jingles_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=207&metro=automation">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Jingle Management</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_jingles_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -124,30 +148,39 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=305&metro=tools" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Widgets</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_widgets_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=305&metro=tools">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Widgets</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_widgets_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=5&metro=tools" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Shoutcast V2</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_shoutcastv2_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=5&metro=tools">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Shoutcast V2</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_shoutcastv2_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=4&metro=tools" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Icecast V2</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_icecastv2_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=4&metro=tools">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Icecast V2</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_icecastv2_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -172,68 +205,89 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=121&metro=statistics" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Zuhörer Statistiken</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=121&metro=statistics">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Zuhörer Statistiken</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=112&metro=statistics" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Betriebssystem</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_os_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=112&metro=statistics">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Betriebssystem</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_os_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=113&metro=statistics" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Browser</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_browser_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=113&metro=statistics">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Browser</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_browser_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=114&metro=statistics" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Herkunft</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_origin_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=114&metro=statistics">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Herkunft</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_origin_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=119&metro=statistics" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Sitzungslänge</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_sessionlength_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=119&metro=statistics">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Sitzungslänge</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_sessionlength_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=107&metro=statistics" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Zuletzt gespielt</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_lastplayed_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=107&metro=statistics">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Zuletzt gespielt</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_lastplayed_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=108&metro=statistics" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Systemübersicht</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_systemoverview_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=108&metro=statistics">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Systemübersicht</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_statistic_systemoverview_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -258,39 +312,51 @@
 
                 <div class="row">
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=200&metro=plugins" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Backup / Failover</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_failover_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=200&metro=plugins">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Backup / Failover</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_failover_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=12&metro=plugins" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Transkoder / HLS</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_transcoder_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=12&metro=plugins">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Transkoder / HLS</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_transcoder_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=7&metro=plugins" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Safeguard</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_safeguard_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=7&metro=plugins">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Safeguard</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_safeguard_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-xl-3">
-                        <a href="#" class="card card-custom card-stretch gutter-b">
-                            <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Apps (Folgen)</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_apps_desc'}</div>
-                            </div>
-                        </a>
+                        <div class="card card-custom bgi-no-repeat"
+                            style="background-position: right top; background-size: 30% auto; background-image: url({$systemsslurl}{$theme.path}/assets/media/svg/shapes/abstract-3.svg)">
+                            <a href="#">
+                                <div class="card-body">
+                                    <div class="card-title font-weight-bolder text-info font-size-h6 mb-4 text-hover-state-dark d-bloc">Apps (Folgen)</div>
+                                    <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_apps_desc'}</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 

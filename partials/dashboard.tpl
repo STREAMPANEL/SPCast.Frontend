@@ -267,7 +267,7 @@
                     <div class="col-xl-3">
                         <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=12&metro=plugins" class="card card-custom card-stretch gutter-b">
                             <div class="card-body">
-                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Transkoder</div>
+                                <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Transkoder / HLS</div>
                                 <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_transcoder_desc'}</div>
                             </div>
                         </a>

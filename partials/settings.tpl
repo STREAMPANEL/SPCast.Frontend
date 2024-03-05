@@ -510,7 +510,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab_settings_5" role="tabpanel">
+                        <div class="tab-pane" id="tab_settings_6" role="tabpanel">
                             <div class="card card-custom sp-margin-bottom">
                                 <div class="card-header border-0 sp-bg-dark">
                                     <div class="card-title">

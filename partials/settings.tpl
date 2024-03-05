@@ -164,15 +164,12 @@
                                 <div class="card-header border-0 sp-bg-dark">
                                     <div class="card-title">
                                         <h3 class="card-label text-white">
-                                            {lang key='sp_spcast_settings'}<br />
-                                            <small>{lang key='sp_spcast_settings_desc'}</small>
+                                            {lang key='sp_spcast_settings_webradio'}<br />
+                                            <small>{lang key='sp_spcast_settings_webradio_desc'}</small>
                                         </h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
-
-                                    <h3>{lang key='sp_spcast_settings_webradio'}</h3>
-                                    <p>{lang key='sp_spcast_settings_webradio_desc'}</p>
 
                                     {if $spSettingsRadioName == ""}
                                         <div class="alert alert-danger" role="alert">
@@ -221,13 +218,12 @@
                                 <div class="card-header border-0 sp-bg-dark">
                                     <div class="card-title">
                                         <h3 class="card-label text-white">
-                                            {lang key='sp_spcast_settings'}<br />
-                                            <small>{lang key='sp_spcast_settings_desc'}</small>
+                                            HTML5-Player<br />
+                                            <small></small>
                                         </h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h3>HTML 5 Player</h3>
 
                                     <div class="form-group">
                                         <label for="InputRadioNoCoverURL"><strong>NoCover-URL</strong></label>
@@ -427,13 +423,12 @@
                                 <div class="card-header border-0 sp-bg-dark">
                                     <div class="card-title">
                                         <h3 class="card-label text-white">
-                                            {lang key='sp_spcast_settings'}<br />
-                                            <small>{lang key='sp_spcast_settings_desc'}</small>
+                                            Relay Modus<br />
+                                            <small></small>
                                         </h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h3>Relay Modus</h3>
 
                                     <h4>Relay Modus aktivieren</h4>
 
@@ -471,13 +466,12 @@
                                 <div class="card-header border-0 sp-bg-dark">
                                     <div class="card-title">
                                         <h3 class="card-label text-white">
-                                            {lang key='sp_spcast_settings'}<br />
-                                            <small>{lang key='sp_spcast_settings_desc'}</small>
+                                            Rechtliche Gegebenheiten<br />
+                                            <small></small>
                                         </h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h3>Rechtliche Gegebenheiten</h3>
 
                                     <div class="form-group">
                                         <label for="InputSettingsPrivacy"><strong>Datenschutz</strong></label>
@@ -515,13 +509,12 @@
                                 <div class="card-header border-0 sp-bg-dark">
                                     <div class="card-title">
                                         <h3 class="card-label text-white">
-                                            {lang key='sp_spcast_settings'}<br />
-                                            <small>{lang key='sp_spcast_settings_desc'}</small>
+                                            Sonstige Optionen<br />
+                                            <small></small>
                                         </h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h3>Sonstige Optionen</h3>
 
                                     <h4>AudioCC Modus</h4>
 

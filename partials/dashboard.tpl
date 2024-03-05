@@ -4,7 +4,7 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        {lang key='sp_spcast_metro_spcast'}
+                        SPCast
                     </h3>
                 </div>
             </div>
@@ -163,7 +163,8 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        {lang key='sp_spcast_metro_spcast_statistics'}
+                        {lang key='sp_spcast_metro_spcast_statistics'}<br />
+                        <small>{lang key='sp_spcast_metro_spcast_statistics_desc'}</small>
                     </h3>
                 </div>
             </div>
@@ -248,7 +249,8 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        {lang key='sp_spcast_metro_spcast_plugins'}
+                        {lang key='sp_spcast_metro_spcast_plugins'}<br />
+                        <small>{lang key='sp_spcast_metro_spcast_plugins_desc'}</small>
                     </h3>
                 </div>
             </div>
@@ -259,7 +261,7 @@
                         <a href="index.php?m=SPStreamserverManagement&spserviceid={$spServiceID}&spsmpageid=200&metro=plugins" class="card card-custom card-stretch gutter-b">
                             <div class="card-body">
                                 <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Backup / Failover</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_dashboard_alternate_desc'}</div>
+                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_failover_desc'}</div>
                             </div>
                         </a>
                     </div>
@@ -286,7 +288,7 @@
                         <a href="#" class="card card-custom card-stretch gutter-b">
                             <div class="card-body">
                                 <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">Apps (Folgen)</div>
-                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_safeguard_desc'}</div>
+                                <div class="font-weight-bold text-inverse-white font-size-sm">{lang key='sp_spcast_metro_apps_desc'}</div>
                             </div>
                         </a>
                     </div>

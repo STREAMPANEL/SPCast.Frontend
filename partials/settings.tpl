@@ -447,7 +447,7 @@
 
                                     <p>Auf Wunsch können Sie Ihre Umgebung im Relay-Modus betreiben. Das heißt einfach gesagt, dass Ihr Programm von einer externen Stelle empfangen wird. Dies kann
                                         nützlich sein, wenn ein
-                                        Wechsel auf der SPCast-Plattform derzeit keine Option ist. Durch den Relay-Modus profitieren Sie dennoch von allen Funktionen innerhalb der Umgebung.</p>
+                                        Wechsel auf der SPCast-Plattform derzeit keine Option ist. Durch den Relay-Modus wird der AutoDJ deaktiviert, dennoch profitieren Sie dabei von allen Funktionen innerhalb der SPCast Umgebung.</p>
 
                                     <div class="controls checkbox">
                                         <label>

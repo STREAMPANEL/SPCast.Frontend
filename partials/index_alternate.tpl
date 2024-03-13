@@ -86,7 +86,9 @@
                 <strong>{lang key='sp_spcast_bitrate'}:</strong> 320 Kbit/s<br />
                 <strong>{lang key='sp_spcast_mountpoint'}:</strong> /stream<br />
                 <strong>{lang key='sp_spcast_username'}:</strong> {$spServerID2Username}<br />
-                <strong>{lang key='sp_spcast_password'}:</strong> {$spServerID2Password}
+                <strong>{lang key='sp_spcast_password'}:</strong> {$spServerID2Password}<br /><br />
+                <strong>{lang key='sp_spcast_attention'}</strong>
+                {lang key='sp_spcast_dashboard_alternate_testserver_workswithmoderators_desc'}
             </div>
         </div>
     </div>

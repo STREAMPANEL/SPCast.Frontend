@@ -156,10 +156,10 @@
             <div class="card-header border-0 sp-bg-dark">
                 <div class="card-title">
                     <h3 class="card-label text-white">
-                        {lang key='sp_spcast_dashboard_alternate_server_icecastv2_credentials'}
                         <i class="fa fa-info text-danger mr-5" data-toggle="sp_popover" data-trigger="click" title="{lang key='sp_spcast_dashboard_alternate_server_icecastv2_datatitle'}"
                             data-content="{lang key='sp_spcast_dashboard_alternate_server_icecastv2_datacontent'}">
                         </i>
+                        {lang key='sp_spcast_dashboard_alternate_server_icecastv2_credentials'}
                     </h3>
                 </div>
                 <div class="card-toolbar">

@@ -225,6 +225,19 @@
                                 </div>
                                 <div class="card-body">
 
+                                    <h4>HTML5-Player</h4>
+
+                                    <p>Standardmäßig ist der HTML5-Player innerhalb Ihrer Umgebung immer aktiviert. Auf Wunsch können Sie den Standard-HTML5-Player für Ihre Umgebung auch vollständig
+                                        deaktivieren.</p>
+
+                                    <div class="controls checkbox">
+                                        <label>
+                                            <input type="checkbox" name="spSettingsHTMLPlayer" value="1" {if $spSettingsHTMLPlayer} checked{/if} class="no-icheck toggle-switch-success"
+                                                data-size="small" data-on-text="{lang key='sp_yes'}" data-off-text="{lang key='sp_no'}" />
+                                            HTML5-Player aktivieren?
+                                        </label>
+                                    </div>
+
                                     <div class="form-group">
                                         <label for="InputRadioNoCoverURL"><strong>NoCover-URL</strong></label>
                                         <input type="text" class="form-control" id="spSettingsRadioNoCoverURL" aria-describedby="InputRadioNoCoverURL"

@@ -21,11 +21,11 @@
                 Die folgenden Verweise dienen nur der Information zum Testserver.<br /><br />
                 <strong>{lang key='sp_spcast_html5_player'}:</strong> <a href="https://{$spHostname}:8100/" target="_blank" rel="noopener">https://{$spHostname}:8100/</a><br />
                 <strong>{lang key='sp_spcast_browser'}:</strong> <a href="https://{$spHostname}:8100/stream" target="_blank" rel="noopener">https://{$spHostname}:8100/stream</a><br /><br />
-                <strong>Winamp / iTunes:</strong> <a href="https://{$spHostname}:8100/listen_test.pls" target="_blank" rel="noopener">https://{$spHostname}:8100/listen_test.pls</a><br />
-                <strong>Windows Media {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostname}:8100/listen_test.asx" target="_blank" rel="noopener">https://{$spHostname}:8100/listen_test.asx</a><br />
-                <strong>Real {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostname}:8100/listen_test.ram" target="_blank" rel="noopener">https://{$spHostname}:8100/listen_test.ram</a><br />
-                <strong>QuickTime:</strong> <a href="https://{$spHostname}:8100/listen_test.qtl" target="_blank" rel="noopener">https://{$spHostname}:8100/listen_test.qtl</a><br /><br />
-                <strong>JSON:</strong> <a href="https://{$spHostname}:8100/status-json.xsl" target="_blank" rel="noopener">https://{$spHostname}:8100/status-json.xsl</a><br />
+                <strong>Winamp / iTunes:</strong> <a href="https://{$spHostname}/listen_test.pls" target="_blank" rel="noopener">https://{$spHostname}/listen_test.pls</a><br />
+                <strong>Windows Media {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostname}/listen_test.asx" target="_blank" rel="noopener">https://{$spHostname}/listen_test.asx</a><br />
+                <strong>Real {lang key='sp_spcast_player'}:</strong> <a href="https://{$spHostname}/listen_test.ram" target="_blank" rel="noopener">https://{$spHostname}/listen_test.ram</a><br />
+                <strong>QuickTime:</strong> <a href="https://{$spHostname}/listen_test.qtl" target="_blank" rel="noopener">https://{$spHostname}/listen_test.qtl</a><br /><br />
+                <strong>JSON:</strong> <a href="https://{$spHostname}:8100/status-json.xsl" target="_blank" rel="noopener">https://{$spHostname}/status-json.xsl</a><br />
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light-primary btn-block" data-dismiss="modal">Schließen</button>

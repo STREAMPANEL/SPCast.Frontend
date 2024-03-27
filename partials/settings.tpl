@@ -303,10 +303,11 @@
 
                                     <p>- Im Standard werden die Inhalte zum festgelegten Zeitpunkt eingespielt. Beim Nutzer wird also der aktuell laufende Song unterbrochen und die Inhalte werden
                                         eingespielt. Derweil
-                                        läuft der AutoDJ im Hintergrund weiter. Am Ende der Inhalte wird der AutoDJ im aktuellen Stand fortgesetzt. (Ohne FADE-Funktion)<br />
+                                        läuft der AutoDJ im Hintergrund weiter. Am Ende der Inhalte wird der AutoDJ im aktuellen Stand fortgesetzt. (Ohne FADE-Funktion)<br /><br />
                                         - Wenn Sie den Alternativen Modus aktivieren, werden Ihre Inhalte zum festgelegten Zeitpunkt eingespielt. Beim Nutzer wird also erneut der laufende Song
                                         unterbrochen und die
-                                        Inhalte werden eingespielt. Am Ende der Inhalte beginnt der AutoDJ mit einem neuen Song, basierend auf Ihrer Planung im AutoDJ. (Mit FADE-Funktion)</p>
+                                        Inhalte werden eingespielt. Am Ende der Inhalte beginnt der AutoDJ mit einem neuen Song, basierend auf Ihrer Planung im AutoDJ. (Mit FADE-Funktion. Im AutoDJ
+                                        muss der Streamer-Modus für diesen Modus zwingend aktiviert sein.)</p>
 
                                     <div class="controls checkbox">
                                         <label>
@@ -447,7 +448,8 @@
 
                                     <p>Auf Wunsch können Sie Ihre Umgebung im Relay-Modus betreiben. Das heißt einfach gesagt, dass Ihr Programm von einer externen Stelle empfangen wird. Dies kann
                                         nützlich sein, wenn ein
-                                        Wechsel auf der SPCast-Plattform derzeit keine Option ist. Durch den Relay-Modus wird der AutoDJ deaktiviert, dennoch profitieren Sie dabei von allen Funktionen innerhalb der SPCast Umgebung.</p>
+                                        Wechsel auf der SPCast-Plattform derzeit keine Option ist. Durch den Relay-Modus wird der AutoDJ deaktiviert, dennoch profitieren Sie dabei von allen Funktionen
+                                        innerhalb der SPCast Umgebung.</p>
 
                                     <div class="controls checkbox">
                                         <label>

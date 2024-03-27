@@ -373,16 +373,6 @@
                 <small>{lang key='sp_spcast_autodj_source_desc'}</small>
             </h3>
         </div>
-        <div class="card-toolbar">
-            <a class="btn btn-sm btn-success mr-2" href="#" onclick="loadXMLOptionStartAutoDJ()" data-container="body" data-offset="-20px -20px" data-toggle="popover" data-placement="top"
-                data-content="{lang key='sp_spcast_autodj_start_desc'}" data-trigger="hover">
-                {lang key='sp_spcast_autodj_start'}
-            </a>
-            <a class="btn btn-sm btn-danger mr-2" href="#" onclick="loadXMLOptionStopAutoDJ()" data-container="body" data-offset="-20px -20px" data-toggle="popover" data-placement="top"
-                data-content="{lang key='sp_spcast_autodj_stop_desc'}" data-trigger="hover">
-                {lang key='sp_spcast_autodj_stop'}
-            </a>
-        </div>
     </div>
     <div class="card-body">
         {capture assign=autodjSourcePasswordOutput}

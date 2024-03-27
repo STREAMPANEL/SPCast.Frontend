@@ -36,7 +36,7 @@
 
         <hr>
 
-        <h3>AutoDJ starten / stoppen (Skript)</h3>
+        <h3>AutoDJ starten / stoppen (Extern)</h3>
         <p>Ein Skript, dass Sie direkt für Ihr Team oder Ihre Webseite verwenden können. Nutzer mit Zugriff auf dieses Skript können den Auto-DJ nach Bedarf ohne Administrationszugang starten oder
             stoppen.</p>
         <p><strong>URL:</strong> <a href="https://{$spHostname}:9000/sp/secure/autodj_manage.php" target="_blank" rel="noopener">https://{$spHostname}:9000/sp/secure/autodj_manage.php</a><br />
@@ -47,7 +47,3 @@
         <hr>
     </div>
 </div>
-
-URL: thttps://music4all.spcast.eu:9000/sp/secure/autodj_manage.php
-Username: autodj
-Passwort: gtJwJnWJ1j9NebKM
